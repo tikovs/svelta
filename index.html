@@ -212,12 +212,12 @@
                                     <h2>Receba dicas e novidades por e-mail.</h2>
                                     <div class="d-flex mb-4">
 
-                                        <input type="email" id="name" name="email" class="form-control rounded-0" placeholder="Digite seu e-mail.">
+                                        <input type="email" id="emailSubscribe" name="email" class="form-control rounded-0" placeholder="Digite seu e-mail.">
                                         <button type="submit" id="my-form-buttonclass" class="btn btn-white btn-outline-white rounded-0">Inscreva-se</button>
 
                                     </div>
-                                    <div class="alert alert-danger center-block submit-fail display-none">Please fill in all form fields<br><a href="#"><i class="fa fa-long-arrow-left fa-4x"></i></a></div>
-                                    <div class="alert alert-success center-block submit-success display-none">Thanks for stopping to say Hello!<br><a href="#"><i class="fa fa-long-arrow-left fa-4x"></i></a></div>
+                                    <div class="alert alert-danger center-block submit-fail display-none">Por favor preencha o campo de e-mail.<br><a href="#"><i class="fa fa-long-arrow-left fa-4x"></i></a></div>
+                                    <div class="alert alert-success center-block submit-success display-none">Obrigada por essa conexão.<br><a href="#"><i class="fa fa-long-arrow-left fa-4x"></i></a></div>
                                     <p>Não perca os lançamentos, pré-venda e garanta a sua exclusividade.
                                     </p>
                                 </form>
@@ -733,10 +733,10 @@
 
                     $(document).ready(function() {
                         $('#subscribe-form').submit(function(e) {
-                            var email = $('#emai')
+                            var email = $('#emailSubscribe');
 
-
-                            if (email.val() == "") {
+                            alert(email.val());
+                            if (email.val() === "") {
                                 $('.submit-fail').fadeToggle(400);
                                 return false;
                             } else {
