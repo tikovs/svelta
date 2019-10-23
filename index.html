@@ -141,15 +141,28 @@
                       <a href="#" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block">View Details</a>
                       <a href="#" class="btn btn-black rounded-0 d-block d-lg-inline-block">Add To Cart</a>
                       <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-      <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+                      <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
+                  <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+                  <input type="hidden" name="code" value="7DA9E538FDFD106AA4855FB2B553C783" />
+                  <input type="hidden" name="iot" value="button" />
+                  <input type="button" class="btn btn-black rounded-0 d-block d-lg-inline-block" value="Comprar" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+                  </form>
+                  <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
+                  <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+                    </p>
+
+
+                    <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+<form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" onsubmit="PagSeguroLightbox(this); return false;">
   <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
   <input type="hidden" name="code" value="7DA9E538FDFD106AA4855FB2B553C783" />
   <input type="hidden" name="iot" value="button" />
-  <input type="button" class="btn btn-black rounded-0 d-block d-lg-inline-block" value="Comprar" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+  <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
   </form>
   <script type="text/javascript" src="https://stc.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.lightbox.js"></script>
   <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-                    </p>
+
+  
                   </div>
                 </div>
               </div>
