@@ -2610,18 +2610,18 @@ h5,
     color: #000;
 }
 
-#JS01C-PP {
+#js01-esgotado {
     display: none;
 }
 
-#JS01C-P {
+#js01-pagamento {
     display: none;
 }
 
-#JS01C-M {
-    display: none;
+#js01-campo-cor {
+    display: block;
 }
 
-#JS01C-G {
-    display: none;
+#js01-campo-tamanho {
+    display: block;
 }
