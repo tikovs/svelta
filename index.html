@@ -214,8 +214,9 @@
 
                                         <input type="email" name="email" class="form-control rounded-0" placeholder="Digite seu e-mail.">
                                         <button type="submit" id="my-form-buttonclass" class="btn btn-white btn-outline-white rounded-0">Inscreva-se</button>
-                                        <p id="my-form-status"></p>
+
                                     </div>
+                                    <p id="my-form-status"></p>
                                     <p>Não perca os lançamentos, pré-venda e garanta a sua exclusividade.
                                     </p>
                                 </form>
@@ -742,13 +743,12 @@
                         // Success and Error functions for after the form is submitted
 
                         function success() {
-                            form.reset();
                             button.style = "display: none ";
-                            status.innerHTML = "Thanks!";
+                            status.innerHTML = "Seu e-mail foi enviado com sucesso!";
                         }
 
                         function error() {
-                            status.innerHTML = "Oops! There was a problem.";
+                            status.innerHTML = "Oops! Aconteceu um problema ao enviar o e-mail.";
                         }
 
                         // handle the form submission event
