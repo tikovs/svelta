@@ -208,15 +208,16 @@
                         <div class="container">
 
                             <div class="row align-items-center justify-content-center">
-                                <form id="my-form" class="col-md-7" action="https://formspree.io/mvopzgzw" method="POST">
+                                <form id="subscribe-form" class="col-md-7">
                                     <h2>Receba dicas e novidades por e-mail.</h2>
                                     <div class="d-flex mb-4">
 
-                                        <input type="email" name="email" class="form-control rounded-0" placeholder="Digite seu e-mail.">
+                                        <input type="email" id="name" name="email" class="form-control rounded-0" placeholder="Digite seu e-mail.">
                                         <button type="submit" id="my-form-buttonclass" class="btn btn-white btn-outline-white rounded-0">Inscreva-se</button>
 
                                     </div>
-                                    <p id="my-form-status"></p>
+                                    <div class="alert alert-danger center-block submit-fail display-none">Please fill in all form fields<br><a href="#"><i class="fa fa-long-arrow-left fa-4x"></i></a></div>
+                                    <div class="alert alert-success center-block submit-success display-none">Thanks for stopping to say Hello!<br><a href="#"><i class="fa fa-long-arrow-left fa-4x"></i></a></div>
                                     <p>Não perca os lançamentos, pré-venda e garanta a sua exclusividade.
                                     </p>
                                 </form>
@@ -727,56 +728,39 @@
                                 console.log('Sorry, we are out of ' + expr + '.');
                         }
                     }
+
+
+
+                    $(document).ready(function() {
+                        $('#subscribe-form').submit(function(e) {
+                            var email = $('#emai')
+
+
+                            if (email.val() == "") {
+                                $('.submit-fail').fadeToggle(400);
+                                return false;
+                            } else {
+                                $.ajax({
+                                    method: 'POST',
+                                    url: '//formspree.io/mvopzgzw',
+                                    data: $('#subscribe-form').serialize(),
+                                    datatype: 'json'
+                                });
+                                e.preventDefault();
+                                $(this).get(0).reset();
+                                $('.submit-success').fadeToggle(400);
+                            }
+                        });
+
+                        $('.submit-fail, .submit-success').click(function() {
+                            $(this).hide();
+                        })
+                    });
                 </script>
 
                 <!-- Place this script at the end of the body tag -->
 
-                <script>
-                    window.addEventListener("DOMContentLoaded", function() {
 
-                        // get the form elements defined in your form HTML above
-
-                        var form = document.getElementById("my-form");
-                        var button = document.getElementById("my-form-button");
-                        var status = document.getElementById("my-form-status");
-
-                        // Success and Error functions for after the form is submitted
-
-                        function success() {
-                            button.style = "display: none ";
-                            status.innerHTML = "Seu e-mail foi enviado com sucesso!";
-                        }
-
-                        function error() {
-                            status.innerHTML = "Oops! Aconteceu um problema ao enviar o e-mail.";
-                        }
-
-                        // handle the form submission event
-
-                        form.addEventListener("submit", function(ev) {
-                            ev.preventDefault();
-                            var data = new FormData(form);
-                            ajax(form.method, form.action, data, success, error);
-                        });
-                    });
-
-                    // helper function for sending an AJAX request
-
-                    function ajax(method, url, data, success, error) {
-                        var xhr = new XMLHttpRequest();
-                        xhr.open(method, url);
-                        xhr.setRequestHeader("Accept", "application/json");
-                        xhr.onreadystatechange = function() {
-                            if (xhr.readyState !== XMLHttpRequest.DONE) return;
-                            if (xhr.status === 200) {
-                                success(xhr.response, xhr.responseType);
-                            } else {
-                                error(xhr.status, xhr.response, xhr.responseType);
-                            }
-                        };
-                        xhr.send(data);
-                    }
-                </script>
     </body>
 
 </html>

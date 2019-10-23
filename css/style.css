@@ -2625,3 +2625,7 @@ h5,
 #js01-campo-tamanho {
     display: block;
 }
+
+.display-none {
+    display: none;
+}
