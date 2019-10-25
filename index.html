@@ -585,16 +585,40 @@
         </div>
 
 
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Política de troca</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                    </div>
+                    <div class="modal-body">
+                        Texto da política de troca
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <footer class="site-footer bg-white">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="row">
-                            <div class="col-md-5">
+                            <div class="col-md-3">
                                 <h2 class="footer-heading mb-4 ">Svelta</h2>
                                 <p>A loja exclusiva de jumpsuit no Brasil.</p>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-3">
                                 <h2 class="footer-heading mb-4">Acesso rápido</h2>
                                 <ul class="list-unstyled">
                                     <li><a href="#about-section">Sobre a Svelta</a></li>
@@ -603,11 +627,18 @@
                                     <li><a href="#contact-section">Contato</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
+                                <h2 class="footer-heading mb-4">Ajuda</h2>
+                                <ul class="list-unstyled">
+                                    <li><a href="#about-section" data-toggle="modal" data-target="#modalExemplo">Política de troca</a></li>
+                            </div>
+
+                            <div class="col-md-3">
                                 <h2 class="footer-heading mb-4">Siga nas redes sociais</h2>
                                 <a href="https://www.facebook.com/svelta.oficial/" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                                 <a href="https://www.instagram.com/svelta.oficial/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -647,116 +678,9 @@
 
 
     <script src="js/main.js"></script>
-
-    <script>
-        function callAlertas() {
-            alertasJS01();
-        }
-
-        function alertasJS01() {
-            let cor = document.getElementById("js01-cor").value;
-            let alertCor = document.getElementById("js01-campo-cor");
-
-            let tamanho = document.getElementById("js01-tamanho").value;
-            let alertTamanho = document.getElementById("js01-campo-tamanho");
-
-            alertCor.style.display = cor === "escolha" ? 'block' : 'none';
-            alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
-        }
-
-        function submitJS01(element) {
-            let cor = document.getElementById("js01-cor").value;
-            let tamanho = document.getElementById("js01-tamanho").value;
-
-            if (cor === "Preto" && tamanho === "G") {
-                document.getElementById("js01-esgotado").style.display = 'block';
-
-            } else {
-                if (cor !== "escolha" && tamanho !== "escolha") {
-                    showDivJS01(document.getElementById("js01-tamanho"));
-                    document.getElementById("js01-esgotado").style.display = 'none';
-                    document.getElementById("js01-pagseguro").submit();
-                }
-            }
+    <script src="js/geral.js"></script>
 
 
-        }
-
-        function showDivJS01(element) {
-            alertasJS01();
-            let cor = document.getElementById("js01-cor").value;
-
-            switch (element.value) {
-                case 'PP':
-                    document.getElementById("js01").value = cor === "Preto" ? '8F49FAC33232A0B4443DFF9E96053DA6' : '645059B06969D2CDD4CE1FBA71D228FA';
-
-                    break;
-                case 'P':
-                    document.getElementById("js01").value = cor === "Preto" ? 'E0E95CCE2929A2A884A8CFBFB6E6853B' : 'C5351EA24949E2EFF4DA9F989A8C42AD';
-                    break;
-                case 'M':
-                    document.getElementById("js01").value = cor === "Preto" ? '4AC59188AEAE8C4AA46D6FA78568E9E0' : '1122AA2EC7C7B1C994EBEF8A3D08462B';
-                    break;
-                case 'G':
-                    document.getElementById("js01").value = cor === "Preto" ? '' : 'B9DF082FEDEDB43004C14FBADD42FB65';
-                    break;
-                default:
-                    console.log('Sorry, we are out of ' + expr + '.');
-            }
-        }
-
-
-        $(document).ready(function() {
-            $('#subscribe-form').submit(function(e) {
-                var email = $('#emailSubscribe');
-
-                if (email.val() === "") {
-                    $('.submit-fail').fadeToggle(400);
-                    return false;
-                } else {
-                    $.ajax({
-                        method: 'POST',
-                        url: '//formspree.io/mvopzgzw',
-                        data: $('#subscribe-form').serialize(),
-                        datatype: 'json'
-                    });
-                    e.preventDefault();
-                    $(this).get(0).reset();
-                    $('.submit-success').fadeToggle(400);
-                }
-            });
-
-            $('.submit-fail, .submit-success').click(function() {
-                $(this).hide();
-            })
-
-            $('#email-form').submit(function(e) {
-                var email = $('#emailMessage');
-                var subject = $('#subject');
-                var name = $('#name');
-                var message = $('#message');
-
-                if (email.val() === "" || subject.val() === "" || name.val() === "" || message.val() === "") {
-                    $('.submit-email-fail').fadeToggle(400);
-                    return false;
-                } else {
-                    $.ajax({
-                        method: 'POST',
-                        url: '//formspree.io/mvopzgzw',
-                        data: $('#email-form').serialize(),
-                        datatype: 'json'
-                    });
-                    e.preventDefault();
-                    $(this).get(0).reset();
-                    $('.submit-email-success').fadeToggle(400);
-                }
-            });
-
-            $('.submit-email-fail, .submit-email-success').click(function() {
-                $(this).hide();
-            })
-        });
-    </script>
 
     <!-- Place this script at the end of the body tag -->
 
