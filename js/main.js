@@ -185,7 +185,7 @@
 
      var siteCountDown = function() {
 
-         $('#date-countdown').countdown('2019/10/28', function(event) {
+         $('#date-countdown').countdown('2019/11/28', function(event) {
              var $this = $(this).html(event.strftime('' +
                  '<span class="countdown-block"><span class="label">%w</span> semanas </span>' +
                  '<span class="countdown-block"><span class="label">%d</span> dias </span>' +
