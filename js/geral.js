@@ -1,6 +1,7 @@
 function callAlertas() {
     alertasJS01();
     alertasJS02();
+    alertasJS03();
 }
 
 function alertasJS01() {
@@ -20,6 +21,19 @@ function alertasJS02() {
 
     let tamanho = document.getElementById("js02-tamanho").value;
     let alertTamanho = document.getElementById("js02-campo-tamanho");
+
+    alert(cor);
+
+    alertCor.style.display = cor === "escolha" ? 'block' : 'none';
+    alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
+}
+
+function alertasJS03() {
+    let cor = document.getElementById("js03-cor").value;
+    let alertCor = document.getElementById("js03-campo-cor");
+
+    let tamanho = document.getElementById("js03-tamanho").value;
+    let alertTamanho = document.getElementById("js03-campo-tamanho");
 
     alertCor.style.display = cor === "escolha" ? 'block' : 'none';
     alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
@@ -48,9 +62,22 @@ function submitJS02(element) {
     let tamanho = document.getElementById("js02-tamanho").value;
 
     if (cor !== "escolha" && tamanho !== "escolha") {
-        showDivJS01(document.getElementById("js02-tamanho"));
+        showDivJS02(document.getElementById("js02-tamanho"));
         document.getElementById("js02-esgotado").style.display = 'none';
         document.getElementById("js02-pagseguro").submit();
+    }
+
+}
+
+
+function submitJS03(element) {
+    let cor = document.getElementById("js03-cor").value;
+    let tamanho = document.getElementById("js03-tamanho").value;
+
+    if (cor !== "escolha" && tamanho !== "escolha") {
+        showDivJS03(document.getElementById("js03-tamanho"));
+        document.getElementById("js03-esgotado").style.display = 'none';
+        document.getElementById("js03-pagseguro").submit();
     }
 
 }
@@ -102,6 +129,67 @@ function showDivJS02(element) {
         default:
             console.log('Sorry, we are out of ' + expr + '.');
     }
+}
+
+function showDivJS03(element) {
+    alertasJS03();
+    let cor = document.getElementById("js03-cor").value;
+
+    if (cor === "Mostarda") {
+        switch (element.value) {
+            case 'PP':
+                document.getElementById("js03").value = ;
+
+                break;
+            case 'P':
+                document.getElementById("js03").value = ;
+                break;
+            case 'M':
+                document.getElementById("js03").value = ;
+                break
+            case 'G':
+                document.getElementById("js03").value = ;
+                break;
+            default:
+                console.log('Sorry, we are out of ' + expr + '.');
+        }
+    } else if (cor === "Nude") {
+        switch (element.value) {
+            case 'PP':
+                document.getElementById("js03").value = ;
+
+                break;
+            case 'P':
+                document.getElementById("js03").value = ;
+                break;
+            case 'M':
+                document.getElementById("js03").value = ;
+                break
+            case 'G':
+                document.getElementById("js03").value = ;
+                break;
+            default:
+                console.log('Sorry, we are out of ' + expr + '.');
+        }
+    } else if (cor === "Off-white") {
+        case 'PP':
+            document.getElementById("js03").value = ;
+
+            break;
+        case 'P':
+            document.getElementById("js03").value = ;
+            break;
+        case 'M':
+            document.getElementById("js03").value = ;
+            break
+        case 'G':
+            document.getElementById("js03").value = ;
+            break;
+        default:
+            console.log('Sorry, we are out of ' + expr + '.');
+    }
+
+
 }
 
 

@@ -2618,6 +2618,10 @@ h5,
     display: none;
 }
 
+#js03-esgotado {
+    display: none;
+}
+
 #js01-pagamento {
     display: none;
 }
@@ -2639,6 +2643,18 @@ h5,
 }
 
 #js02-campo-tamanho {
+    display: block;
+}
+
+#js03-pagamento {
+    display: none;
+}
+
+#js03-campo-cor {
+    display: block;
+}
+
+#js03-campo-tamanho {
     display: block;
 }
 
