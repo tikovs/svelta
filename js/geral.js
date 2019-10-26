@@ -2,6 +2,7 @@
         alertasJS01();
         alertasJS02();
         alertasJS03();
+        alertasJS04();
     }
 
     function alertasJS01() {
@@ -36,6 +37,19 @@
         alertCor.style.display = cor === "escolha" ? 'block' : 'none';
         alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
     }
+
+    function alertasJS04() {
+        let cor = document.getElementById("js04-cor").value;
+        let alertCor = document.getElementById("js04-campo-cor");
+
+        let tamanho = document.getElementById("js04-tamanho").value;
+        let alertTamanho = document.getElementById("js04-campo-tamanho");
+
+        alertCor.style.display = cor === "escolha" ? 'block' : 'none';
+        alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
+    }
+
+
 
     function submitJS01(element) {
         let cor = document.getElementById("js01-cor").value;
@@ -80,6 +94,23 @@
                 showDivJS01(document.getElementById("js03-tamanho"));
                 document.getElementById("js03-esgotado").style.display = 'none';
                 document.getElementById("js03-pagseguro").submit();
+            }
+        }
+
+    }
+
+    function submitJS04(element) {
+        let cor = document.getElementById("js04-cor").value;
+        let tamanho = document.getElementById("js04-tamanho").value;
+
+        if (cor === "Off-white" && tamanho === "G") {
+            document.getElementById("js04-esgotado").style.display = 'block';
+
+        } else {
+            if (cor !== "escolha" && tamanho !== "escolha") {
+                showDivJS01(document.getElementById("js04-tamanho"));
+                document.getElementById("js04-esgotado").style.display = 'none';
+                document.getElementById("js04-pagseguro").submit();
             }
         }
 
@@ -191,6 +222,73 @@
                 break
             case 'G':
                 document.getElementById("js03").value = "4BF473B30A0A74ECC486BFBBCF840B0C";
+                break;
+            default:
+                console.log('Sorry, we are out of ' + expr + '.');
+             }
+        }
+
+
+    }
+
+
+    function showDivJS04(element) {
+        alertasJS04();
+        let cor = document.getElementById("js04-cor").value;
+
+        if (cor === "Vermelho") {
+            switch (element.value) {
+                case 'PP':
+                    document.getElementById("js04").value = "21683A2A3A3A012224336FB87DE22100";
+                    break;
+                case 'P':
+                    document.getElementById("js04").value = "64F6D5CD43430C7DD406BFB47BD01203";
+                    break;
+                case 'M':
+                    document.getElementById("js04").value = "A28F7FF43E3E651444D8DF9A4E46943B";
+                    break
+                case 'G':
+                    document.getElementById("js04").value = "E17D1CC17B7B0C4884AC7FA43B43EF19";
+                    break;
+                default:
+                    console.log('Sorry, we are out of ' + expr + '.');
+                }
+        } 
+
+         if (cor === "Preto") {
+            switch (element.value) {
+                case 'PP':
+                    document.getElementById("js04").value = "6A229AC08F8F202004463F95F8F883A0";
+
+                    break;
+                case 'P':
+                    document.getElementById("js04").value = "B7B129DEA2A22D0334059F9EC15BBFFE";
+                    break;
+                case 'M':
+                    document.getElementById("js04").value = "02753904F9F9A56BB4100FB5FD7F1483";
+                    break
+                case 'G':
+                    document.getElementById("js04").value = "44A28F775B5B1F62248E3F8842DFCF5B";
+                    break;
+                default:
+                    console.log('Sorry, we are out of ' + expr + '.');
+                }
+        } 
+
+         if (cor === "Off-white") {
+            switch (element.value) {
+            case 'PP':
+                document.getElementById("js04").value = "FA1E16B86767C31FF4645FA7F6A92B87";
+
+                break;
+            case 'P':
+                document.getElementById("js04").value = "2A4AAA002929871DD4C46FB981C5BA9F";
+                break;
+            case 'M':
+                document.getElementById("js04").value = "5EECA865B5B580B99431FF89CE4110CC";
+                break
+            case 'G':
+                document.getElementById("js04").value = "";
                 break;
             default:
                 console.log('Sorry, we are out of ' + expr + '.');
