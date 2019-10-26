@@ -1,5 +1,6 @@
 function callAlertas() {
     alertasJS01();
+    alertasJS02();
 }
 
 function alertasJS01() {
@@ -13,19 +14,25 @@ function alertasJS01() {
     alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
 }
 
-function submitJS01(element) {
-    let cor = document.getElementById("js01-cor").value;
-    let tamanho = document.getElementById("js01-tamanho").value;
+function alertasJS02() {
+    let cor = document.getElementById("js02-cor").value;
+    let alertCor = document.getElementById("js02-campo-cor");
 
-    if (cor === "Preto" && tamanho === "G") {
-        document.getElementById("js01-esgotado").style.display = 'block';
+    let tamanho = document.getElementById("js02-tamanho").value;
+    let alertTamanho = document.getElementById("js02-campo-tamanho");
 
-    } else {
-        if (cor !== "escolha" && tamanho !== "escolha") {
-            showDivJS01(document.getElementById("js01-tamanho"));
-            document.getElementById("js01-esgotado").style.display = 'none';
-            document.getElementById("js01-pagseguro").submit();
-        }
+    alertCor.style.display = cor === "escolha" ? 'block' : 'none';
+    alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
+}
+
+function submitJS02(element) {
+    let cor = document.getElementById("js02-cor").value;
+    let tamanho = document.getElementById("js02-tamanho").value;
+
+    if (cor !== "escolha" && tamanho !== "escolha") {
+        showDivJS01(document.getElementById("js02-tamanho"));
+        document.getElementById("js02-esgotado").style.display = 'none';
+        document.getElementById("js02-pagseguro").submit();
     }
 
 
@@ -48,6 +55,29 @@ function showDivJS01(element) {
             break;
         case 'G':
             document.getElementById("js01").value = cor === "Preto" ? '' : 'B9DF082FEDEDB43004C14FBADD42FB65';
+            break;
+        default:
+            console.log('Sorry, we are out of ' + expr + '.');
+    }
+}
+
+function showDivJS02(element) {
+    alertasJS02();
+    let cor = document.getElementById("js02-cor").value;
+
+    switch (element.value) {
+        case 'PP':
+            document.getElementById("js02").value = cor === "Lima" ? '28CADE504A4A243444C85F960E90C119' : '';
+
+            break;
+        case 'P':
+            document.getElementById("js02").value = cor === "Lima" ? 'DC03439B272743E994B01F853A45052F' : '';
+            break;
+        case 'M':
+            document.getElementById("js02").value = cor === "Lima" ? '27D04AF3DDDDAB0FF4F67FBD4D18F923' : '';
+            break
+        case 'G':
+            document.getElementById("js02").value = cor === "Lima" ? 'A4716D170C0CA08CC49DEFAB379D9146' : '';
             break;
         default:
             console.log('Sorry, we are out of ' + expr + '.');
