@@ -2603,6 +2603,15 @@ h5,
 @media (max-width: 991.98px) {
     .product-item-2 .product-title-wrap h2 {
         font-size: 2rem;
+    }   
+    .site-blocks-cover,
+    .site-blocks-cover>.container>.row {
+        min-height: 400px!important;
+        height: 400px!important;
+    }
+    .site-blocks-cover.overlay-white {
+        background-size: contain;
+        background-position: center!important;
     }
 }
 
