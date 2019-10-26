@@ -2629,3 +2629,8 @@ h5,
 .display-none {
     display: none;
 }
+
+.letter-orange {
+    color: #f23a2e;
+    font-size: 8pt;
+}
