@@ -3,6 +3,8 @@
         alertasJS02();
         alertasJS03();
         alertasJS04();
+        alertasJS05();
+        alertasJS06();
     }
 
     function alertasJS01() {
@@ -44,6 +46,28 @@
 
         let tamanho = document.getElementById("js04-tamanho").value;
         let alertTamanho = document.getElementById("js04-campo-tamanho");
+
+        alertCor.style.display = cor === "escolha" ? 'block' : 'none';
+        alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
+    }
+
+    function alertasJS05() {
+        let cor = document.getElementById("js05-cor").value;
+        let alertCor = document.getElementById("js05-campo-cor");
+
+        let tamanho = document.getElementById("js05-tamanho").value;
+        let alertTamanho = document.getElementById("js05-campo-tamanho");
+
+        alertCor.style.display = cor === "escolha" ? 'block' : 'none';
+        alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
+    }
+
+     function alertasJS06() {
+        let cor = document.getElementById("js06-cor").value;
+        let alertCor = document.getElementById("js06-campo-cor");
+
+        let tamanho = document.getElementById("js06-tamanho").value;
+        let alertTamanho = document.getElementById("js06-campo-tamanho");
 
         alertCor.style.display = cor === "escolha" ? 'block' : 'none';
         alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
@@ -117,6 +141,43 @@
     }
 
 
+     function submitJS05(element) {
+        let cor = document.getElementById("js05-cor").value;
+        let tamanho = document.getElementById("js05-tamanho").value;
+
+        if (cor === "Off-white" && tamanho === "G") {
+            document.getElementById("js05-esgotado").style.display = 'block';
+
+        } else if (cor === "Branco" && tamanho === "G") {
+            document.getElementById("js05-esgotado").style.display = 'block';
+        }else {
+            if (cor !== "escolha" && tamanho !== "escolha") {
+                showDivJS01(document.getElementById("js05-tamanho"));
+                document.getElementById("js05-esgotado").style.display = 'none';
+                document.getElementById("js05-pagseguro").submit();
+            }
+        }
+
+    }
+
+    function submitJS06(element) {
+        let cor = document.getElementById("js06-cor").value;
+        let tamanho = document.getElementById("js06-tamanho").value;
+
+        if (cor === "Metalizado" && tamanho === "G") {
+            document.getElementById("js06-esgotado").style.display = 'block';
+
+        } else {
+        if (cor !== "escolha" && tamanho !== "escolha") {
+            showDivJS02(document.getElementById("js06-tamanho"));
+            document.getElementById("js06-esgotado").style.display = 'none';
+            document.getElementById("js06-pagseguro").submit();
+        }
+    }
+
+    }
+
+
     function showDivJS01(element) {
         alertasJS01();
         let cor = document.getElementById("js01-cor").value;
@@ -148,17 +209,17 @@
 
         switch (element.value) {
             case 'PP':
-                document.getElementById("js02").value = cor === "Lima" ? '28CADE504A4A243444C85F960E90C119' : '28CADE504A4A243444C85F960E90C119';
+                document.getElementById("js02").value = cor === "Lima" ? '28CADE504A4A243444C85F960E90C119' : '';
 
                 break;
             case 'P':
-                document.getElementById("js02").value = cor === "Lima" ? 'DC03439B272743E994B01F853A45052F' : 'DC03439B272743E994B01F853A45052F';
+                document.getElementById("js02").value = cor === "Lima" ? 'DC03439B272743E994B01F853A45052F' : '';
                 break;
             case 'M':
-                document.getElementById("js02").value = cor === "Lima" ? '27D04AF3DDDDAB0FF4F67FBD4D18F923' : '27D04AF3DDDDAB0FF4F67FBD4D18F923';
+                document.getElementById("js02").value = cor === "Lima" ? '27D04AF3DDDDAB0FF4F67FBD4D18F923' : '';
                 break
             case 'G':
-                document.getElementById("js02").value = cor === "Lima" ? 'A4716D170C0CA08CC49DEFAB379D9146' : 'A4716D170C0CA08CC49DEFAB379D9146';
+                document.getElementById("js02").value = cor === "Lima" ? 'A4716D170C0CA08CC49DEFAB379D9146' : '';
                 break;
             default:
                 console.log('Sorry, we are out of ' + expr + '.');
@@ -296,6 +357,98 @@
         }
 
 
+    }
+
+
+
+    function showDivJS05(element) {
+        alertasJS05();
+        let cor = document.getElementById("js05-cor").value;
+
+        if (cor === "Branco") {
+            switch (element.value) {
+                case 'PP':
+                    document.getElementById("js05").value = "CB5AD795C4C40CA444DBCFA01AE7EA3E";
+                    break;
+                case 'P':
+                    document.getElementById("js05").value = "7E07C1F4D5D5C3CDD4E8BFBFD13D47AE";
+                    break;
+                case 'M':
+                    document.getElementById("js05").value = "BCB090B4FEFE9DBCC4DC8F8F212524D3";
+                    break
+                case 'G':
+                    document.getElementById("js05").value = "";
+                    break;
+                default:
+                    console.log('Sorry, we are out of ' + expr + '.');
+                }
+        } 
+
+         if (cor === "Off-white") {
+            switch (element.value) {
+                case 'PP':
+                    document.getElementById("js05").value = "47743EE5C6C60EBDD453DF9932CB2738";
+
+                    break;
+                case 'P':
+                    document.getElementById("js05").value = "E0EAC8D3DCDC169884558FA96D4EF161";
+                    break;
+                case 'M':
+                    document.getElementById("js05").value = "31BB81431F1F829EE4A4CF81EBD689F7";
+                    break
+                case 'G':
+                    document.getElementById("js05").value = "";
+                    break;
+                default:
+                    console.log('Sorry, we are out of ' + expr + '.');
+                }
+        } 
+
+         if (cor === "Prata") {
+            switch (element.value) {
+            case 'PP':
+                document.getElementById("js05").value = "";
+
+                break;
+            case 'P':
+                document.getElementById("js05").value = "";
+                break;
+            case 'M':
+                document.getElementById("js05").value = "";
+                break
+            case 'G':
+                document.getElementById("js05").value = "";
+                break;
+            default:
+                console.log('Sorry, we are out of ' + expr + '.');
+             }
+        }
+
+
+    }
+
+
+    function showDivJS06(element) {
+        alertasJS06();
+        let cor = document.getElementById("js06-cor").value;
+
+        switch (element.value) {
+            case 'PP':
+                document.getElementById("js06").value = cor === "Metalizado" ? '85214A0BD5D542BBB4C1FF989ACC44DC' : '';
+
+                break;
+            case 'P':
+                document.getElementById("js06").value = cor === "Metalizado" ? '685C99BED2D292C9949C6F87AD656C94' : '';
+                break;
+            case 'M':
+                document.getElementById("js06").value = cor === "Metalizado" ? '99CD0FA7ACAC36B444F68F9FD9F6A74C' : '';
+                break
+            case 'G':
+                document.getElementById("js06").value = cor === "Metalizado" ? '' : '';
+                break;
+            default:
+                console.log('Sorry, we are out of ' + expr + '.');
+        }
     }
 
 

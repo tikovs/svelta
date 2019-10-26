@@ -2633,6 +2633,15 @@ h5,
 #js04-esgotado {
     display: none;
 }
+#js05-esgotado {
+    display: none;
+}
+#js06-esgotado {
+    display: none;
+}
+#js07-esgotado {
+    display: none;
+}
 
 
 #js01-pagamento {
@@ -2680,6 +2689,43 @@ h5,
 }
 
 #js04-campo-tamanho {
+    display: block;
+}
+
+#js05-pagamento {
+    display: none;
+}
+
+#js05-campo-cor {
+    display: block;
+}
+
+#js06-campo-tamanho {
+    display: block;
+}
+
+#js06-pagamento {
+    display: none;
+}
+
+#js06-campo-cor {
+    display: block;
+}
+
+#js06-campo-tamanho {
+    display: block;
+}
+
+
+#js07-pagamento {
+    display: none;
+}
+
+#js07-campo-cor {
+    display: block;
+}
+
+#js07-campo-tamanho {
     display: block;
 }
 
