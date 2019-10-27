@@ -860,6 +860,13 @@ h5,
     color: white !important;
 }
 
+.site-blocks-black-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: center center;
+}
+
 .site-blocks-black-cover.overlay:before {
     position: absolute;
     content: "";
