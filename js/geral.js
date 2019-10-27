@@ -142,6 +142,9 @@
             if (cor === "Off-white" && tamanho === "G") {
                 document.getElementById("js04-esgotado").style.display = 'block';
 
+            }  else if (cor === "Preto" && tamanho === "G") {
+                document.getElementById("js04-esgotado").style.display = 'block';
+
             } else {
                 if (cor !== "escolha" && tamanho !== "escolha") {
                     showDivJS01(document.getElementById("js04-tamanho"));
