@@ -209,14 +209,14 @@
 
             switch (element.value) {
                 case 'PP':
-                    document.getElementById("js01").value = cor === "Preto" ? '8F49FAC33232A0B4443DFF9E96053DA6' : '645059B06969D2CDD4CE1FBA71D228FA';
+                    document.getElementById("js01").value = cor === "Preto" ? '74A5158F02028D9774A08F9789796898' : '645059B06969D2CDD4CE1FBA71D228FA';
 
                     break;
                 case 'P':
-                    document.getElementById("js01").value = cor === "Preto" ? 'E0E95CCE2929A2A884A8CFBFB6E6853B' : 'C5351EA24949E2EFF4DA9F989A8C42AD';
+                    document.getElementById("js01").value = cor === "Preto" ? 'E43E67376C6C84BBB4958F89BE67932A' : 'C5351EA24949E2EFF4DA9F989A8C42AD';
                     break;
                 case 'M':
-                    document.getElementById("js01").value = cor === "Preto" ? '4AC59188AEAE8C4AA46D6FA78568E9E0' : '1122AA2EC7C7B1C994EBEF8A3D08462B';
+                    document.getElementById("js01").value = cor === "Preto" ? '29FDCB3A5A5A80D3347DAF99D1431989' : '1122AA2EC7C7B1C994EBEF8A3D08462B';
                     break;
                 case 'G':
                     document.getElementById("js01").value = cor === "Preto" ? '' : 'B9DF082FEDEDB43004C14FBADD42FB65';
