@@ -852,6 +852,24 @@ h5,
     background-position: center center;
 }
 
+.site-blocks-black-cover.overlay {
+    position: relative;
+}
+
+.font-white {
+    color: white !important;
+}
+
+.site-blocks-black-cover.overlay:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.66);
+}
+
 .site-blocks-cover.overlay {
     position: relative;
 }
@@ -2737,3 +2755,4 @@ h5,
     color: #f23a2e;
     font-size: 8pt;
 }
+
