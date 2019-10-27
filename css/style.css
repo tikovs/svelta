@@ -861,6 +861,7 @@ h5,
 }
 
 .site-blocks-black-cover {
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     background-position: center center;
@@ -2638,6 +2639,12 @@ h5,
     .site-blocks-cover.overlay-white {
         background-size: contain;
         background-position: center!important;
+    }
+
+     .site-blocks-black-cover,
+    .site-blocks-cover>.container>.row {
+        min-height: 600px!important;
+        height: 600px!important;
     }
 }
 
