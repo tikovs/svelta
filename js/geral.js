@@ -503,6 +503,11 @@
             }
         }
 
+        onClickUrl = url => {
+              alert('Do something');
+              window.location.href = url;
+        }   
+
 
 
         $(document).ready(function() {
