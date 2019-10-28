@@ -86,14 +86,21 @@
                         <nav class="site-navigation position-relative text-right" role="navigation">
 
                             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                                <li><a  onclick="onClickUrl('https://svelta.com.br/index.html#home-section')"class="nav-link">Home</a></li>
-                                <li><a href="../index.html" class="nav-link">Produtos</a></li>
-                                <li><a href="../index.html" class="nav-link">Sobre a Svelta</a></li>
-                                <li><a href="index.html" class="nav-link">Conexão</a></li>
-                                <li><a href="../index.html" class="nav-link">Contato</a></li>
+                                <li><a  onclick="onClickUrl('https://svelta.com.br/index.html#home-section')" class="nav-link">Home</a></li>
+                                <li><a onclick="onClickUrl('https://svelta.com.br/index.html#products-section')" class="nav-link">Produtos</a></li>
+                                <li><a onclick="onClickUrl('https://svelta.com.br/index.html#about-section')"  class="nav-link">Sobre a Svelta</a></li>
+                                <li><a href="index.html#conexao-section" class="nav-link">Conexão</a></li>
+                                <li><a onclick="onClickUrl('https://svelta.com.br/index.html#contact-section')" " class="nav-link">Contato</a></li>
                             </ul>
                         </nav>
                     </div>
+
+                        <script type="text/javascript">
+                            onClickUrl = url => {
+                                  window.location.href = url;
+                            };
+
+                        </script>
 
 
                     <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
@@ -320,6 +327,7 @@
 
     </div>
     <!-- .site-wrap -->
+
 
 
     <script src="../js/jquery-3.3.1.min.js"></script>
