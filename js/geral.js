@@ -467,7 +467,7 @@
                     document.getElementById("js06").value = cor === "Metalizado" ? '99CD0FA7ACAC36B444F68F9FD9F6A74C' : '';
                     break
                 case 'G':
-                    document.getElementById("js06").value = cor === "Metalizado" ? '' : '';
+                    document.getElementById("js06").value = cor === "Metalizado" ? 'B35710EA02027BF334EDCFB29E306B2C' : '';
                     break;
                 default:
                     console.log('Sorry, we are out of ' + expr + '.');
