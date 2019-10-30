@@ -470,6 +470,7 @@
                     document.getElementById("js06").value = cor === "Metalizado" ? 'B35710EA02027BF334EDCFB29E306B2C' : '';
                     break;
                 default:
+                
                     console.log('Sorry, we are out of ' + expr + '.');
             }
         }
