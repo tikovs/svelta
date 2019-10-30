@@ -179,17 +179,12 @@
             let cor = document.getElementById("js06-cor").value;
             let tamanho = document.getElementById("js06-tamanho").value;
 
-          /*  if (cor === "Metalizado" && tamanho === "G") {
-                document.getElementById("js06-esgotado").style.display = 'block';
-
-            } else {  */
             if (cor !== "escolha" && tamanho !== "escolha") {
                 showDivJS06(document.getElementById("js06-tamanho"));
                 document.getElementById("js06-esgotado").style.display = 'none';
                 document.getElementById("js06-pagseguro").submit();
             }
-      //  }
-
+ 
         }
 
 
