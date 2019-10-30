@@ -127,7 +127,7 @@
 
             } else {
                 if (cor !== "escolha" && tamanho !== "escolha") {
-                    showDivJS01(document.getElementById("js03-tamanho"));
+                    showDivJS03(document.getElementById("js03-tamanho"));
                     document.getElementById("js03-esgotado").style.display = 'none';
                     document.getElementById("js03-pagseguro").submit();
                 }
@@ -147,7 +147,7 @@
 
             } else {
                 if (cor !== "escolha" && tamanho !== "escolha") {
-                    showDivJS01(document.getElementById("js04-tamanho"));
+                    showDivJS04(document.getElementById("js04-tamanho"));
                     document.getElementById("js04-esgotado").style.display = 'none';
                     document.getElementById("js04-pagseguro").submit();
                 }
@@ -167,7 +167,7 @@
                 document.getElementById("js05-esgotado").style.display = 'block';
             }else {
                 if (cor !== "escolha" && tamanho !== "escolha") {
-                    showDivJS01(document.getElementById("js05-tamanho"));
+                    showDivJS05(document.getElementById("js05-tamanho"));
                     document.getElementById("js05-esgotado").style.display = 'none';
                     document.getElementById("js05-pagseguro").submit();
                 }
@@ -184,7 +184,7 @@
 
             } else {  */
             if (cor !== "escolha" && tamanho !== "escolha") {
-                showDivJS02(document.getElementById("js06-tamanho"));
+                showDivJS06(document.getElementById("js06-tamanho"));
                 document.getElementById("js06-esgotado").style.display = 'none';
                 document.getElementById("js06-pagseguro").submit();
             }
@@ -198,7 +198,7 @@
             let tamanho = document.getElementById("js07-tamanho").value;
 
                 if (cor !== "escolha" && tamanho !== "escolha") {
-                    showDivJS02(document.getElementById("js07-tamanho"));
+                    showDivJS07(document.getElementById("js07-tamanho"));
                     document.getElementById("js07-esgotado").style.display = 'none';
                     document.getElementById("js07-pagseguro").submit();
                 }
