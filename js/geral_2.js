@@ -91,7 +91,7 @@
             let cor = document.getElementById("js01-cor").value;
             let tamanho = document.getElementById("js01-tamanho").value;
 
-            if (cor === "Preto" && tamanho === "G") {
+            if (cor === "Preto" &&  (tamanho === "G"  || tamanho === "PP")) {
                 document.getElementById("js01-esgotado").style.display = 'block';
 
             } else {
@@ -125,6 +125,10 @@
             if (cor === "Nude" && tamanho === "G") {
                 document.getElementById("js03-esgotado").style.display = 'block';
 
+            }
+            else if (cor === "Mostarda" && tamanho === "G") {
+                document.getElementById("js03-esgotado").style.display = 'block';
+
             } else {
                 if (cor !== "escolha" && tamanho !== "escolha") {
                     showDivJS03(document.getElementById("js03-tamanho"));
@@ -142,10 +146,10 @@
             if (cor === "Off-white" && tamanho === "G") {
                 document.getElementById("js04-esgotado").style.display = 'block';
 
-            }  else if (cor === "Preto" && tamanho === "G") {
+            }  /*else if (cor === "Preto" && tamanho === "G") {
                 document.getElementById("js04-esgotado").style.display = 'block';
 
-            } else {
+            } */else {
                 if (cor !== "escolha" && tamanho !== "escolha") {
                     showDivJS04(document.getElementById("js04-tamanho"));
                     document.getElementById("js04-esgotado").style.display = 'none';
@@ -160,7 +164,7 @@
             let cor = document.getElementById("js05-cor").value;
             let tamanho = document.getElementById("js05-tamanho").value;
 
-            if (cor === "Off-white" && tamanho === "G") {
+            if (cor === "Off-white" && (tamanho === "G" || tamanho === "M")) {
                 document.getElementById("js05-esgotado").style.display = 'block';
 
             } else if (cor === "Branco" && tamanho === "G") {
