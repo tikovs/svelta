@@ -236,17 +236,17 @@
 
             switch (element.value) {
                 case 'PP':
-                    document.getElementById("js02").value = cor === "Lima" ? '28CADE504A4A243444C85F960E90C119' : '';
+                    document.getElementById("js02").value = cor === "Lima" ? '51F9931F9C9C2A57749B7FABB1F6EE53' : '';
 
                     break;
                 case 'P':
-                    document.getElementById("js02").value = cor === "Lima" ? 'DC03439B272743E994B01F853A45052F' : '';
+                    document.getElementById("js02").value = cor === "Lima" ? 'DC0BE38030301D9554C3EFAE3EC8BB2B' : '';
                     break;
                 case 'M':
-                    document.getElementById("js02").value = cor === "Lima" ? '27D04AF3DDDDAB0FF4F67FBD4D18F923' : '';
+                    document.getElementById("js02").value = cor === "Lima" ? '15C92C09DBDB438BB49FBFB8A020E2F9' : '';
                     break
                 case 'G':
-                    document.getElementById("js02").value = cor === "Lima" ? 'A4716D170C0CA08CC49DEFAB379D9146' : '';
+                    document.getElementById("js02").value = cor === "Lima" ? '5A0628525F5F474444180FAF67676CEB' : '';
                     break;
                 default:
                     console.log('Sorry, we are out of ' + expr + '.');
@@ -260,16 +260,16 @@
             if (cor === "Mostarda") {
                 switch (element.value) {
                     case 'PP':
-                        document.getElementById("js03").value = "FF17B6124141430554F28F80D8C4C382";
+                        document.getElementById("js03").value = "1BF05A5D5E5EA9E11421DFB5921392F3";
                         break;
                     case 'P':
-                        document.getElementById("js03").value = "72281EDFBBBBE459949F0F9B66BA0E8E";
+                        document.getElementById("js03").value = "6AB08D87DBDBF1FCC4D47FB7A8F7BEB3";
                         break;
                     case 'M':
-                        document.getElementById("js03").value = "9EC2A9A1EDED6CDFF491EFBE3A9C90F8";
+                        document.getElementById("js03").value = "B8ACCAE81919D4E55400AFB7118EB7AB";
                         break
                     case 'G':
-                        document.getElementById("js03").value = "D4D8B3203E3E638CC4A80FA67AC84057";
+                        document.getElementById("js03").value = "FF3AE2111A1A932DD4FB0FB5F1D587A4";
                         break;
                     default:
                         console.log('Sorry, we are out of ' + expr + '.');
@@ -279,17 +279,17 @@
              if (cor === "Nude") {
                 switch (element.value) {
                     case 'PP':
-                        document.getElementById("js03").value = "EFE991A7C4C4C71554F6CF8B4D2DA087";
+                        document.getElementById("js03").value = "7D481FF55D5DD192244C1F87B0A9F3EC";
 
                         break;
                     case 'P':
-                        document.getElementById("js03").value = "73FDA4553333900EE4A66FBA96E08C86";
+                        document.getElementById("js03").value = "AB7C2564DADAFA52247E7F81BC4AD804";
                         break;
                     case 'M':
-                        document.getElementById("js03").value = "CAE133761818E5C2240F5FA445AE410B";
+                        document.getElementById("js03").value = "D8590D932727FF72246CEF83F89C7B75";
                         break
                     case 'G':
-                        document.getElementById("js03").value = " ";
+                        document.getElementById("js03").value = "09A126F5C1C191C9946FCF96373F9535";
                         break;
                     default:
                         console.log('Sorry, we are out of ' + expr + '.');
@@ -299,17 +299,17 @@
              if (cor === "Off-white") {
                 switch (element.value) {
                 case 'PP':
-                    document.getElementById("js03").value = "AC0A63826C6CF06444F7EFBD07823B3B";
+                    document.getElementById("js03").value = "6DEBE67E1010699334DC3F845B07EE60";
 
                     break;
                 case 'P':
-                    document.getElementById("js03").value = "DD1096A2DBDB394774BC3FA2477E11EC";
+                    document.getElementById("js03").value = "A375DDA8B1B1F70224AFDF91BF873C6C";
                     break;
                 case 'M':
-                    document.getElementById("js03").value = "0F022CF62B2B1134441CBFA64ADF0AE5";
+                    document.getElementById("js03").value = "DD1BE2E51A1AACFEE41B3F9C94811BD4";
                     break
                 case 'G':
-                    document.getElementById("js03").value = "4BF473B30A0A74ECC486BFBBCF840B0C";
+                    document.getElementById("js03").value = "10A5F0CE2D2D85B114371F9C2422AC4B";
                     break;
                 default:
                     console.log('Sorry, we are out of ' + expr + '.');
