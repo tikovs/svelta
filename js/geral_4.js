@@ -211,17 +211,17 @@
 
             switch (element.value) {
                 case 'PP':
-                    document.getElementById("js01").value = cor === "Preto" ? '74A5158F02028D9774A08F9789796898' : '645059B06969D2CDD4CE1FBA71D228FA';
+                    document.getElementById("js01").value = cor === "Preto" ? 'E37A8BD4202001D00439FFBF1A3CF306' : '66FA4E4F8F8FF89EE4E44FBB42E3274E';
 
                     break;
                 case 'P':
-                    document.getElementById("js01").value = cor === "Preto" ? 'E43E67376C6C84BBB4958F89BE67932A' : 'C5351EA24949E2EFF4DA9F989A8C42AD';
+                    document.getElementById("js01").value = cor === "Preto" ? '13FCCF552B2B615AA422EF834B971C09' : 'ECE2FE19BABA4CBFF4560FBF550905D1';
                     break;
                 case 'M':
-                    document.getElementById("js01").value = cor === "Preto" ? '29FDCB3A5A5A80D3347DAF99D1431989' : '1122AA2EC7C7B1C994EBEF8A3D08462B';
+                    document.getElementById("js01").value = cor === "Preto" ? '50A8A78E7C7C37B664FBAF810912D834' : '207E277E23234539949BBF867864D4AB';
                     break;
                 case 'G':
-                    document.getElementById("js01").value = cor === "Preto" ? '' : 'B9DF082FEDEDB43004C14FBADD42FB65';
+                    document.getElementById("js01").value = cor === "Preto" ? '97ED7E2F43437D09940D5F8F7CE1D46F' : '5086EA2D313164B994F5AFA2A6C99132';
                     break;
                 default:
                     console.log('Sorry, we are out of ' + expr + '.');
@@ -236,17 +236,17 @@
 
             switch (element.value) {
                 case 'PP':
-                    document.getElementById("js02").value = cor === "Lima" ? '51F9931F9C9C2A57749B7FABB1F6EE53' : '';
+                    document.getElementById("js02").value = cor === "Lima" ? 'C4EA5937C9C9A8144459CFAC6982B929' : '';
 
                     break;
                 case 'P':
-                    document.getElementById("js02").value = cor === "Lima" ? 'DC0BE38030301D9554C3EFAE3EC8BB2B' : '';
+                    document.getElementById("js02").value = cor === "Lima" ? '38C6A7F60E0EF94224908FB15F08C499  ' : '';
                     break;
                 case 'M':
-                    document.getElementById("js02").value = cor === "Lima" ? '15C92C09DBDB438BB49FBFB8A020E2F9' : '';
+                    document.getElementById("js02").value = cor === "Lima" ? '97FE3E682929331BB4ECFFB03AF58BDF' : '';
                     break
                 case 'G':
-                    document.getElementById("js02").value = cor === "Lima" ? '5A0628525F5F474444180FAF67676CEB' : '';
+                    document.getElementById("js02").value = cor === "Lima" ? 'D7E001AC90900FE11465FFACB7C13740' : '';
                     break;
                 default:
                     console.log('Sorry, we are out of ' + expr + '.');
@@ -260,16 +260,16 @@
             if (cor === "Mostarda") {
                 switch (element.value) {
                     case 'PP':
-                        document.getElementById("js03").value = "1BF05A5D5E5EA9E11421DFB5921392F3";
+                        document.getElementById("js03").value = "20178B9F8484451AA4813F80ECF47509";
                         break;
                     case 'P':
-                        document.getElementById("js03").value = "6AB08D87DBDBF1FCC4D47FB7A8F7BEB3";
+                        document.getElementById("js03").value = "9CEBA2021C1CCA2554D1CF9404846D18";
                         break;
                     case 'M':
-                        document.getElementById("js03").value = "B8ACCAE81919D4E55400AFB7118EB7AB";
+                        document.getElementById("js03").value = "CCB6D25C7272A96DD4B1FF801362E632";
                         break
                     case 'G':
-                        document.getElementById("js03").value = "FF3AE2111A1A932DD4FB0FB5F1D587A4";
+                        document.getElementById("js03").value = "6E38102C8D8D9EDBB49FDFBC1CD1611F";
                         break;
                     default:
                         console.log('Sorry, we are out of ' + expr + '.');
@@ -279,17 +279,17 @@
              if (cor === "Nude") {
                 switch (element.value) {
                     case 'PP':
-                        document.getElementById("js03").value = "7D481FF55D5DD192244C1F87B0A9F3EC";
+                        document.getElementById("js03").value = "B88A9EE46C6C649AA4F37F80667E4B83";
 
                         break;
                     case 'P':
-                        document.getElementById("js03").value = "AB7C2564DADAFA52247E7F81BC4AD804";
+                        document.getElementById("js03").value = "E9CAB4555858D58AA4548FACE0C2F9B2";
                         break;
                     case 'M':
-                        document.getElementById("js03").value = "D8590D932727FF72246CEF83F89C7B75";
+                        document.getElementById("js03").value = "294C83735C5CAD4FF4523FAEF87F814A";
                         break
                     case 'G':
-                        document.getElementById("js03").value = "09A126F5C1C191C9946FCF96373F9535";
+                        document.getElementById("js03").value = "56C4E30AE9E9708994444FADC08247A2";
                         break;
                     default:
                         console.log('Sorry, we are out of ' + expr + '.');
@@ -299,17 +299,17 @@
              if (cor === "Off-white") {
                 switch (element.value) {
                 case 'PP':
-                    document.getElementById("js03").value = "6DEBE67E1010699334DC3F845B07EE60";
+                    document.getElementById("js03").value = "A9D97C828181E3A5540BEFA82CCEF559";
 
                     break;
                 case 'P':
-                    document.getElementById("js03").value = "A375DDA8B1B1F70224AFDF91BF873C6C";
+                    document.getElementById("js03").value = "D673B83D93934C20049D0FB4B4E36DAC";
                     break;
                 case 'M':
-                    document.getElementById("js03").value = "DD1BE2E51A1AACFEE41B3F9C94811BD4";
+                    document.getElementById("js03").value = "052991C4A1A1773224126F939E239748";
                     break
                 case 'G':
-                    document.getElementById("js03").value = "10A5F0CE2D2D85B114371F9C2422AC4B";
+                    document.getElementById("js03").value = "2F30CC23BEBE621EE4793F84AD4438FC";
                     break;
                 default:
                     console.log('Sorry, we are out of ' + expr + '.');
@@ -327,16 +327,16 @@
             if (cor === "Vermelho") {
                 switch (element.value) {
                     case 'PP':
-                        document.getElementById("js04").value = "5A531331212105A3347D7F96F7A2AA21";
+                        document.getElementById("js04").value = "6A352B8667674A6884EBAF9F9C3FDB14";
                         break;
                     case 'P':
-                        document.getElementById("js04").value = "B2F8579F2323C7F6647F7F8C064BEC9D";
+                        document.getElementById("js04").value = "A5460CA12121BFB224EE9FBACFCC6D4C";
                         break;
                     case 'M':
-                        document.getElementById("js04").value = "DDFA2CC9AEAE91E44433AFA00A7D75E2";
+                        document.getElementById("js04").value = "C88A3A16F3F3239444B83F9ECE330AE2";
                         break
                     case 'G':
-                        document.getElementById("js04").value = "0A9768C04E4E0B7994817FA99F4FA0AB";
+                        document.getElementById("js04").value = "F4CB4D79B8B8700DD46A1F87F2CE3848";
                         break;
                     default:
                         console.log('Sorry, we are out of ' + expr + '.');
@@ -346,17 +346,17 @@
              if (cor === "Preto") {
                 switch (element.value) {
                     case 'PP':
-                        document.getElementById("js04").value = "BCF02A497979C16DD4925FB892DA1320";
+                        document.getElementById("js04").value = "48BD8B9B353571FEE4CB1F93F08C010D";
 
                         break;
                     case 'P':
-                        document.getElementById("js04").value = "E123CB828282A56224A06FA369DC9694";
+                        document.getElementById("js04").value = "8C982B9BCCCCA85AA401DFA2C935EDC5";
                         break;
                     case 'M':
-                        document.getElementById("js04").value = "0BA4FDB0A9A933DCC4D22FAD2F55F104";
+                        document.getElementById("js04").value = "CC206A26FFFF576554D92F87699EF55E";
                         break
                     case 'G':
-                        document.getElementById("js04").value = "3BAB36565E5E249EE42CEF9B4FF420CC";
+                        document.getElementById("js04").value = "FDAD62E1B3B3D90994B01FB0749282A3";
                         break;
                     default:
                         console.log('Sorry, we are out of ' + expr + '.');
@@ -366,17 +366,17 @@
              if (cor === "Off-white") {
                 switch (element.value) {
                 case 'PP':
-                    document.getElementById("js04").value = "911656099C9C778EE4A93FA5536DF379";
+                    document.getElementById("js04").value = "4D40DA8720200F2BB49FBF821655D295";
 
                     break;
                 case 'P':
-                    document.getElementById("js04").value = "B38028141010A34664874F975EDEF555";
+                    document.getElementById("js04").value = "757C1B244C4C5C077457CF83882E915E";
                     break;
                 case 'M':
-                    document.getElementById("js04").value = "D8C54FF9B1B1A79BB4D00FAF844F78F2";
+                    document.getElementById("js04").value = "A75BB3F6C3C33DC114A62F9AFAD8DCFB";
                     break
                 case 'G':
-                    document.getElementById("js04").value = "039EDE19C0C094EDD4220FA538995971";
+                    document.getElementById("js04").value = "D1B21FCE7E7E24E774E47FBA7424409E";
                     break;
                 default:
                     console.log('Sorry, we are out of ' + expr + '.');
@@ -395,16 +395,16 @@
             if (cor === "Branco") {
                 switch (element.value) {
                     case 'PP':
-                        document.getElementById("js05").value = "CB5AD795C4C40CA444DBCFA01AE7EA3E";
+                        document.getElementById("js05").value = "E738F3D6E5E56EE8849A2F961FEAB1FC";
                         break;
                     case 'P':
-                        document.getElementById("js05").value = "7E07C1F4D5D5C3CDD4E8BFBFD13D47AE";
+                        document.getElementById("js05").value = "370471BEB8B896699427EF9C9978E3A3";
                         break;
                     case 'M':
-                        document.getElementById("js05").value = "BCB090B4FEFE9DBCC4DC8F8F212524D3";
+                        document.getElementById("js05").value = "7226F6094747037EE499DFA531EE487C";
                         break
                     case 'G':
-                        document.getElementById("js05").value = "";
+                        document.getElementById("js05").value = "9F974A1FD1D1BAAEE4663F9401CEC139";
                         break;
                     default:
                         console.log('Sorry, we are out of ' + expr + '.');
@@ -414,17 +414,17 @@
              if (cor === "Off-white") {
                 switch (element.value) {
                     case 'PP':
-                        document.getElementById("js05").value = "47743EE5C6C60EBDD453DF9932CB2738";
+                        document.getElementById("js05").value = "EE9A58394545C9B77444DFAC63A109B2";
 
                         break;
                     case 'P':
-                        document.getElementById("js05").value = "E0EAC8D3DCDC169884558FA96D4EF161";
+                        document.getElementById("js05").value = "25D6C19765650FE774A6EF9A16CA6774";
                         break;
                     case 'M':
-                        document.getElementById("js05").value = "31BB81431F1F829EE4A4CF81EBD689F7";
+                        document.getElementById("js05").value = "57D6EF6E25259F233456FFB5FDA85BD5";
                         break
                     case 'G':
-                        document.getElementById("js05").value = "";
+                        document.getElementById("js05").value = "86816B949F9F4C111480EF810D1495F7";
                         break;
                     default:
                         console.log('Sorry, we are out of ' + expr + '.');
@@ -461,17 +461,17 @@
 
             switch (element.value) {
                 case 'PP':
-                    document.getElementById("js06").value = cor === "Metalizado" ? '85214A0BD5D542BBB4C1FF989ACC44DC' : '';
+                    document.getElementById("js06").value = cor === "Metalizado" ? '5709BEBD1515967DD4265F8322F35DF7' : '';
 
                     break;
                 case 'P':
-                    document.getElementById("js06").value = cor === "Metalizado" ? '685C99BED2D292C9949C6F87AD656C94' : '';
+                    document.getElementById("js06").value = cor === "Metalizado" ? '3B4325B865652AB44402EFB64EA776ED' : '';
                     break;
                 case 'M':
-                    document.getElementById("js06").value = cor === "Metalizado" ? '99CD0FA7ACAC36B444F68F9FD9F6A74C' : '';
+                    document.getElementById("js06").value = cor === "Metalizado" ? '684448998A8AFD2AA4F37FAC2FAB110D' : '';
                     break
                 case 'G':
-                    document.getElementById("js06").value = cor === "Metalizado" ? 'B35710EA02027BF334EDCFB29E306B2C' : '';
+                    document.getElementById("js06").value = cor === "Metalizado" ? '9771F5AEACAC537FF481FF8A41BE8A42' : '';
                     break;
                 default:
                 
@@ -486,17 +486,17 @@
 
             switch (element.value) {
                 case 'PP':
-                    document.getElementById("js07").value = cor === "Metalizado" ? 'E66509D24444AA63347A0FB8536F0E1D' : '';
+                    document.getElementById("js07").value = cor === "Metalizado" ? '3F42BDF82626B42224F1BFA70AF1AEC9' : '';
 
                     break;
                 case 'P':
-                    document.getElementById("js07").value = cor === "Metalizado" ? 'AF45AAD08282360664150F950047BE23' : '';
+                    document.getElementById("js07").value = cor === "Metalizado" ? '83D60C57B2B2E79AA4243FA1B7BE1C1F' : '';
                     break;
                 case 'M':
-                    document.getElementById("js07").value = cor === "Metalizado" ? 'DAAA1EFF2727A4F004E72F900CC7F474' : '';
+                    document.getElementById("js07").value = cor === "Metalizado" ? '6279F92C8B8B4A9774F7DF875BFC80E5' : '';
                     break
                 case 'G':
-                    document.getElementById("js07").value = cor === "Metalizado" ? '1EBBBA227070E39AA4E40F882595A184' : '';
+                    document.getElementById("js07").value = cor === "Metalizado" ? '94291BE9AAAAC7811476EF8224F67821' : '';
                     break;
                 default:
                     console.log('Sorry, we are out of ' + expr + '.');
