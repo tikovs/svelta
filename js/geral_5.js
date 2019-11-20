@@ -143,7 +143,7 @@
             let cor = document.getElementById("js04-cor").value;
             let tamanho = document.getElementById("js04-tamanho").value;
 
-            if (cor === "Off-white" && (tamanho === "G" || tamanho === "PP" || tamanho === "M" )) {
+            if (cor === "Off-white" && (tamanho === "G" || tamanho === "PP" )) {
                 document.getElementById("js04-esgotado").style.display = 'block';
 
             }  else if (cor === "Preto" && (tamanho === "PP" || tamanho === "M" || tamanho === "G")) {
