@@ -122,7 +122,7 @@
             let cor = document.getElementById("js03-cor").value;
             let tamanho = document.getElementById("js03-tamanho").value;
 
-            if (cor === "Nude" && tamanho === "G") {
+            if (cor === "Nude" && (tamanho === "G"|| tamanho === "M")) {
                 document.getElementById("js03-esgotado").style.display = 'block';
 
             }
@@ -149,7 +149,7 @@
             }  else if (cor === "Preto" && (tamanho === "PP" || tamanho === "M" || tamanho === "G" || tamanho === "P")) {
                 document.getElementById("js04-esgotado").style.display = 'block';
 
-            } else if (cor === "Vermelho" && (tamanho === "PP")) {
+            } else if (cor === "Vermelho" && (tamanho === "PP" || tamanho === "G")) {
                 document.getElementById("js04-esgotado").style.display = 'block';
 
             }else {
