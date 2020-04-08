@@ -125,11 +125,15 @@
             let cor = document.getElementById("js03-cor").value;
             let tamanho = document.getElementById("js03-tamanho").value;
 
-            if (cor === "Nude" && (tamanho === "G"|| tamanho === "M")) {
+            if (cor === "Nude" && (tamanho === "G"|| tamanho === "PP" || tamanho === "P"  )) {
                 document.getElementById("js03-esgotado").style.display = 'block';
 
             }
-            else if (cor === "Mostarda" && (tamanho === "G" || tamanho === "M")) {
+            else if (cor === "Off-white" && (tamanho === "G" ||  tamanho === "PP" )) {
+                document.getElementById("js03-esgotado").style.display = 'block';
+
+            }
+            else if (cor === "Mostarda" && (tamanho === "G" || tamanho === "M" || tamanho === "P" )) {
                 document.getElementById("js03-esgotado").style.display = 'block';
 
             } else {
@@ -242,17 +246,17 @@
 
             switch (element.value) {
                 case 'PP':
-                    document.getElementById("js02").value = cor === "Lima" ? 'D7E8936F3D3D34D994C75F8513ED8017' : '';
+                    document.getElementById("js02").value = cor === "Lima" ? '9B33433FAAAA56AAA49E8FAD0CADC9C1' : '';
 
                     break;
                 case 'P':
-                    document.getElementById("js02").value = cor === "Lima" ? '2B19CF003333DA255486DFBA116E274A  ' : '';
+                    document.getElementById("js02").value = cor === "Lima" ? '148B2B2FC0C071C00424DFA79501C348  ' : '';
                     break;
                 case 'M':
-                    document.getElementById("js02").value = cor === "Lima" ? '6FCF2074CFCF42344417DF9D9A229463' : '';
+                    document.getElementById("js02").value = cor === "Lima" ? '429D41122A2AC58BB4002F96753864CE' : '';
                     break
                 case 'G':
-                    document.getElementById("js02").value = cor === "Lima" ? 'A2EDBC739F9F11A774CB6F8FE9A80C5F' : '';
+                    document.getElementById("js02").value = cor === "Lima" ? '6EE3A617E7E796CCC4EA5F847732B644' : '';
                     break;
                 default:
                     console.log('Sorry, we are out of ' + expr + '.');
@@ -266,7 +270,7 @@
             if (cor === "Mostarda") {
                 switch (element.value) {
                     case 'PP':
-                        document.getElementById("js03").value = "3A8AB006B0B0286884FF4FBECDC955FB";
+                        document.getElementById("js03").value = "83C567DF909036A774BC8FBA7C1D5A52";
                         break;
                     case 'P':
                         document.getElementById("js03").value = "6E6D90DBCACA735FF4C8AF8BDB61FDBB";
@@ -292,7 +296,7 @@
                         document.getElementById("js03").value = "E860B13E8989ACB334FDCF86BF90DC69";
                         break;
                     case 'M':
-                        document.getElementById("js03").value = "294C83735C5CAD4FF4523FAEF87F814A";
+                        document.getElementById("js03").value = "187E0F5CD8D8F1C884F6AF85CE3508BE";
                         break
                     case 'G':
                         document.getElementById("js03").value = "56C4E30AE9E9708994444FADC08247A2";
@@ -309,10 +313,10 @@
 
                     break;
                 case 'P':
-                    document.getElementById("js03").value = "5F24748C2F2FD02DD4F99F80D93F5BF3";
+                    document.getElementById("js03").value = "BA3384A33737FA455459EFB8B67856A3";
                     break;
                 case 'M':
-                    document.getElementById("js03").value = "8AA47C41CDCD659EE41EDF8EBCEF804E";
+                    document.getElementById("js03").value = "7360C17A171731A334B2BFBB64BD6D47";
                     break
                 case 'G':
                     document.getElementById("js03").value = "CA9C7C7060601E3FF435AFB801338317";
