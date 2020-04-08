@@ -496,17 +496,17 @@
 
             switch (element.value) {
                 case 'PP':
-                    document.getElementById("js07").value = cor === "Metalizado" ? 'C005A795CDCD3C277436FFBF5F07B02F' : '';
+                    document.getElementById("js07").value = cor === "Metalizado" ? '3B7A7AF6E4E4B0977400DF822210B339' : '';
 
                     break;
                 case 'P':
-                    document.getElementById("js07").value = cor === "Metalizado" ? 'F86B70297878C645546ADFAAC2E719D5' : '';
+                    document.getElementById("js07").value = cor === "Metalizado" ? 'C9977E7DC2C2A931146BAF8A9C47CA7C' : '';
                     break;
                 case 'M':
-                    document.getElementById("js07").value = cor === "Metalizado" ? '248D9599A5A56DEDD4746F84FB8CCD12' : '';
+                    document.getElementById("js07").value = cor === "Metalizado" ? '22CF113E5A5A3D94449ADFB49FFF184B' : '';
                     break
                 case 'G':
-                    document.getElementById("js07").value = cor === "Metalizado" ? '56A9F3B47979981BB444DFBBFFC6714E' : '';
+                    document.getElementById("js07").value = cor === "Metalizado" ? '8B2032178787EB88849A0F80596538A5' : '';
                     break;
                 default:
                     console.log('Sorry, we are out of ' + expr + '.');
