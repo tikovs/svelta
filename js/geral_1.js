@@ -471,17 +471,17 @@
 
             switch (element.value) {
                 case 'PP':
-                    document.getElementById("js06").value = cor === "Metalizado" ? 'F9838B0F656519ABB41C9FBDB2C08084' : '';
+                    document.getElementById("js06").value = cor === "Metalizado" ? 'E79552F65B5B5C8DD4D8EFB69E32CEFD' : '';
 
                     break;
                 case 'P':
-                    document.getElementById("js06").value = cor === "Metalizado" ? 'D30A42F045453E7774699F88D2411D9E' : '';
+                    document.getElementById("js06").value = cor === "Metalizado" ? '6B95C0C39E9EE2A0043FBF99566F63A0' : '';
                     break;
                 case 'M':
-                    document.getElementById("js06").value = cor === "Metalizado" ? '0662D5469E9E1B3DD4B6CFB323CF5A5A' : '';
+                    document.getElementById("js06").value = cor === "Metalizado" ? '9AD947222F2FB79FF4D27FBABB5C467D' : '';
                     break
                 case 'G':
-                    document.getElementById("js06").value = cor === "Metalizado" ? '35687830EDEDEF1DD4154F8E0B0EAE33' : '';
+                    document.getElementById("js06").value = cor === "Metalizado" ? 'CF7147B97575DAAEE487AFA368F64FED' : '';
                     break;
                 default:
 
