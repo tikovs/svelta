@@ -135,7 +135,7 @@ function submitJS03(element) {
         document.getElementById("js03-esgotado").style.display = 'block';
 
     }
-    else if (cor === "Off-white" && (tamanho === "G" || tamanho === "PP")) {
+    else if (cor === "Off-white" && tamanho === "PP") {
         document.getElementById("js03-esgotado").style.display = 'block';
 
     }
