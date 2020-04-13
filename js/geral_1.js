@@ -180,10 +180,10 @@ function submitJS05(element) {
     let cor = document.getElementById("js05-cor").value;
     let tamanho = document.getElementById("js05-tamanho").value;
 
+
     if (cor === "Off-white" && (tamanho === "G" || tamanho === "M")) {
         document.getElementById("js05-esgotado").style.display = 'block';
-
-    } else if (cor === "Branco" && tamanho === "G" || tamanho === "PP") {
+    } else if (cor === "Branco" && (tamanho === "G" || tamanho === "PP")) {
         document.getElementById("js05-esgotado").style.display = 'block';
     } else {
         if (cor !== "escolha" && tamanho !== "escolha") {
