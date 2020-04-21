@@ -352,7 +352,7 @@ function showDivJS04(element) {
                 document.getElementById("js04").value = "A5460CA12121BFB224EE9FBACFCC6D4C";
                 break;
             case 'M':
-                document.getElementById("js04").value = "C32C8E257F7FEA877429DF877BA531F7";
+                document.getElementById("js04").value = "32555E7CDEDE5A133444DF9BBC389166";
                 break
             case 'G':
                 document.getElementById("js04").value = "F4CB4D79B8B8700DD46A1F87F2CE3848";
