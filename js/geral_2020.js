@@ -28,6 +28,9 @@ function alertasJS02() {
 
     alertCor.style.display = cor === "escolha" ? 'block' : 'none';
     alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
+
+    document.getElementById("cupomJS02-alerta-falha").style.display = 'none';
+    document.getElementById("cupomJS02-alerta-sucesso").style.display = 'none';
 }
 
 function alertasJS03() {
@@ -107,6 +110,25 @@ function submitJS01(element) {
 
 
 }
+
+
+function cupomJS02(element) {
+    let cupomJS02 = document.getElementById("cupomJS02").value;
+    let cupomJS02Valido = document.getElementById("cupomJS02-valido").value;
+
+    if(cupomJS02 === "NANDA"){
+        document.getElementById("cupomJS02-valido").value = true;
+        document.getElementById("priceJS02").value = "R$300,77";
+        document.getElementById("cupomJS02-alerta-falha").style.display = 'none';
+        document.getElementById("cupomJS02-alerta-sucesso").style.display = 'block';
+    }else{
+        document.getElementById("cupomJS02-valido").value = false;
+        document.getElementById("cupomJS02-alerta-falha").style.display = 'block';
+        document.getElementById("cupomJS02-alerta-sucesso").style.display = 'none';
+        document.getElementById("priceJS02").value = "R$467,70";
+    }
+}
+
 
 function submitJS02(element) {
     let cor = document.getElementById("js02-cor").value;
@@ -252,14 +274,20 @@ function showDivJS01(element) {
 function showDivJS02(element) {
     alertasJS02();
     let cor = document.getElementById("js02-cor").value;
+    let cupomJS02 = document.getElementById("cupomJS02-valido").value;
 
     switch (element.value) {
         case 'PP':
-            document.getElementById("js02").value = cor === "Lima" ? '9B33433FAAAA56AAA49E8FAD0CADC9C1' : '';
 
+            document.getElementById("js02").value = cor === "Lima" ? '9B33433FAAAA56AAA49E8FAD0CADC9C1' : '';
             break;
         case 'P':
-            document.getElementById("js02").value = cor === "Lima" ? '148B2B2FC0C071C00424DFA79501C348  ' : '';
+            if (cupomJS02) {
+                alert("AQI SIM PORRA");
+                document.getElementById("js02").value = cor === "Lima" ? 'AQUISIM' : '';
+            } else {
+                document.getElementById("js02").value = cor === "Lima" ? '148B2B2FC0C071C00424DFA79501C348  ' : '';
+            }
             break;
         case 'M':
             document.getElementById("js02").value = cor === "Lima" ? '429D41122A2AC58BB4002F96753864CE' : '';
