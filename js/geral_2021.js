@@ -283,7 +283,6 @@ function showDivJS02(element) {
             break;
         case 'P':
             if (cupomJS02) {
-                alert("AQI SIM PORRA");
                 document.getElementById("js02").value = cor === "Lima" ? 'AQUISIM' : '';
             } else {
                 document.getElementById("js02").value = cor === "Lima" ? '148B2B2FC0C071C00424DFA79501C348  ' : '';
