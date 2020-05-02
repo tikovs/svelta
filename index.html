@@ -921,7 +921,7 @@
 
                                             <div class="mb-4">
                                                 <h3 class="text-black font-weight-bold h5">Preço:</h3>
-                                                <div class="price"> <input id="priceJS02" value="467,70" readonly style="border: 0"/></div>
+                                                <div class="price"> <input id="priceJS02" value="R$467,70" readonly style="border: 0"/></div>
                                             </div>
 
                                             <div class="mb-4">
@@ -1260,7 +1260,7 @@
 
                                             <div class="mb-4">
                                                 <h3 class="text-black font-weight-bold h5">Preço:</h3>
-                                                <div class="price"> R$427,97</div>
+                                                <div class="price"><input id="priceJS04" value="R$427,97" readonly style="border: 0"/></div>
                                             </div>
 
                                             <div class="mb-4">
@@ -1296,9 +1296,21 @@
                                                     Produto esgotado.
                                                 </div>
 
+                                                <div class="alert alert-success" id="cupomJS04-alerta-sucesso" style="display: none"  role="alert">
+                                                        O cumpom foi aplicado com sucesso.
+                                                </div>
+                                                <div class="alert alert-warning" id="cupomJS04-alerta-falha"  style="display: none"  role="alert">
+                                                             O cupom não é válido.
+                                                </div>
+
 
                                             <p>
                                                     <button onclick="submitJS04()" class="col-12 btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block float-left mr-2">Comprar</button>
+                                                    <div class="col-12 row pt-2">
+                                                            <input id="cupomJS04" type="text" class="col-4 form-control rounded-0"/>
+                                                            <input id="cupomJS04-valido" type="hidden" value="false" class=" form-control rounded-0"/>
+                                                            <button onclick="cupomJS04()" class="col-7 btn btn-black btn-outline-black rounded-0 ml-1">Aplicar cupom</button>
+                                                        </div>
                                             </p>
 
 
@@ -1949,7 +1961,7 @@
 
 
                 <script src="js/main.js"></script>
-                <script src="js/geral_2021.js"></script>
+                <script src="js/geral_2022.js"></script>
 
 
 
