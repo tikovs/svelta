@@ -6,6 +6,7 @@ function callAlertas() {
     alertasJS05();
     alertasJS06();
     alertasJS07();
+    alertasJS09();
 }
 
 function alertasJS01() {
@@ -86,6 +87,17 @@ function alertasJS07() {
 
     let tamanho = document.getElementById("js07-tamanho").value;
     let alertTamanho = document.getElementById("js07-campo-tamanho");
+
+    alertCor.style.display = cor === "escolha" ? 'block' : 'none';
+    alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
+}
+
+function alertasJS09() {
+    let cor = document.getElementById("js09-cor").value;
+    let alertCor = document.getElementById("js09-campo-cor");
+
+    let tamanho = document.getElementById("js09-tamanho").value;
+    let alertTamanho = document.getElementById("js09-campo-tamanho");
 
     alertCor.style.display = cor === "escolha" ? 'block' : 'none';
     alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
@@ -265,6 +277,23 @@ function submitJS07(element) {
         document.getElementById("js07-pagseguro").submit();
     }
 
+}
+
+
+function submitJS09(element) {
+    let cor = document.getElementById("js09-cor").value;
+    let tamanho = document.getElementById("js09-tamanho").value;
+
+    if (cor === "Coral" && (tamanho === "GG")){
+        document.getElementById("js09-esgotado").style.display = 'block';
+
+    } else {
+        if (cor !== "escolha" && tamanho !== "escolha") {
+            showDivJS09(document.getElementById("js09-tamanho"));
+            document.getElementById("js09-esgotado").style.display = 'none';
+            document.getElementById("js09-pagseguro").submit();
+        }
+    }
 }
 
 
@@ -661,6 +690,80 @@ function showDivJS07(element) {
 }
 
 
+
+function showDivJS09(element) {
+    alertasJS09();
+    let cor = document.getElementById("js09-cor").value;
+
+    if (cor === "Preto") {
+        switch (element.value) {
+            case 'PP':
+                document.getElementById("js09").value = "0B2744BAA7A7D9F7742E3F9899B1FFEA";
+                break;
+            case 'P':
+                document.getElementById("js09").value = "513D361ABBBB10F884C68F964FD302F3";
+                break;
+            case 'M':
+                document.getElementById("js09").value = "8CB92E166C6C87EDD4E58F85057392DA";
+                break
+            case 'G':
+                document.getElementById("js09").value = "DE5CED8024249CD224BCAFB50288CF43";
+                break;
+            case 'GG':
+                document.getElementById("js09").value = "4B3E51314F4F381BB4FD2FA338A6B695";
+                break;
+            default:
+                console.log('Sorry, we are out of ' + expr + '.');
+        }
+    }
+
+    if (cor === "Coral") {
+        switch (element.value) {
+            case 'PP':
+                document.getElementById("js09").value = "DA2550983737D5FDD464FF8D05D8FC78";
+                break;
+            case 'P':
+                document.getElementById("js09").value = "06A4BAF00505B18004BD5F9A019FAD06";
+                break;
+            case 'M':
+                document.getElementById("js09").value = "33527B7C2B2B1AD004215F9781868443";
+                break
+            case 'G':
+                document.getElementById("js09").value = "625EE47DA6A6B23AA4A1CFB8C77BD768";
+                break;
+            case 'GG':
+                document.getElementById("js09").value = "8AE770FB7A7AB68CC4C0DF8619FBB2A0";
+                break;
+            default:
+                console.log('Sorry, we are out of ' + expr + '.');
+        }
+    }
+
+    if (cor === "Azul") {
+        switch (element.value) {
+            case 'PP':
+                document.getElementById("js09").value = "53FEB9268B8BBB1334633FB399DD77F1";
+
+                break;
+            case 'P':
+                document.getElementById("js09").value = "ED0A1D1CD6D6658AA4391FB615850C4D";
+                break;
+            case 'M':
+                document.getElementById("js09").value = "466F81A0D2D26B45547BDFB1AF76FD01";
+                break
+            case 'G':
+                document.getElementById("js09").value = "8A21FC7FE5E5C7588423FFAA7EFD41AD";
+                break;
+            case 'GG':
+                document.getElementById("js09").value = "CA7E092A9191BD9DD486BF9C41522B1B";
+                break;
+            default:
+                console.log('Sorry, we are out of ' + expr + '.');
+        }
+    }
+
+
+}
 
 
 $(document).ready(function () {

@@ -2794,6 +2794,9 @@ h5,
 #js07-esgotado {
   display: none;
 }
+#js09-esgotado {
+  display: none;
+}
 
 #js01-pagamento {
   display: none;
@@ -2876,6 +2879,18 @@ h5,
 }
 
 #js07-campo-tamanho {
+  display: block;
+}
+
+#js09-pagamento {
+  display: none;
+}
+
+#js09-campo-cor {
+  display: block;
+}
+
+#js09-campo-tamanho {
   display: block;
 }
 
