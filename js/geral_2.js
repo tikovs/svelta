@@ -150,7 +150,7 @@ function cupomJS04(element) {
     let cupomJS04 = document.getElementById("cupomJS04").value;
     let cupomJS04Valido = document.getElementById("cupomJS04-valido").value;
 
-    if (cupomJS04 === "VITORIA") {
+    if (cupomJS04 === "VITORIA" || cupomJS04 === "JULIANA" ) {
         document.getElementById("cupomJS04-valido").value = "true";
         document.getElementById("priceJS04").value = "R$406,57";
         document.getElementById("cupomJS04-alerta-falha").style.display = 'none';
