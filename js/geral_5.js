@@ -152,14 +152,14 @@ function cupomJS04(element) {
 
     if (cupomJS04 === "VITORIA" || cupomJS04 === "JULIANA" ) {
         document.getElementById("cupomJS04-valido").value = "true";
-        document.getElementById("priceJS04").value = "R$406,57";
+        document.getElementById("priceJS04").value = "R$372,83";
         document.getElementById("cupomJS04-alerta-falha").style.display = 'none';
         document.getElementById("cupomJS04-alerta-sucesso").style.display = 'block';
     } else {
         document.getElementById("cupomJS04-valido").value = "false";
         document.getElementById("cupomJS04-alerta-falha").style.display = 'block';
         document.getElementById("cupomJS04-alerta-sucesso").style.display = 'none';
-        document.getElementById("priceJS04").value = "R$427,97";
+        document.getElementById("priceJS04").value = "R$397,72";
     }
 }
 
@@ -449,37 +449,37 @@ function showDivJS04(element) {
         switch (element.value) {
             case 'PP':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "BA9D0CD5A2A24677749FEF8DD6322F10";
+                    document.getElementById("js04").value = "DDA5CA3FD6D6F06BB4104F81E3FBBB11";
                 } else {
-                    document.getElementById("js04").value = "4FE502F0434329B3344FAF8EC06C7123";
+                    document.getElementById("js04").value = "A68E6A583D3DAAE0048F0F8F52F93020";
                 }
                 break;
             case 'P':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "FD2F40934444433CC476AF8BEBDC2CCE";
+                    document.getElementById("js04").value = "172FF45CF8F88A5DD4FF4F9E78E32D62";
                 } else {
-                    document.getElementById("js04").value = "C73153DC7F7FEDF994BD5F8945731FF5";
+                    document.getElementById("js04").value = "2F2DFFC3E4E40DFFF432AFBD488CE255";
                 }
                 break;
             case 'M':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "277940ED646448CCC4811FBAB75A0128";
+                    document.getElementById("js04").value = "48F9CE74EAEA5ECEE4CD8FA08CC88F27";
                 } else {
-                    document.getElementById("js04").value = "FC4E815142425CE774841F820F5E5E69";
+                    document.getElementById("js04").value = "6C872D6A87874F988453BF99417712E0";
                 }
                 break
             case 'G':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "602FAFCC6F6F3F5CC4BD2F8A24E0A27C";
+                    document.getElementById("js04").value = "7CCC3A01C1C1965884F2EF9CF483B33A";
                 } else {
-                    document.getElementById("js04").value = "2487DF70606072BEE40E9F992135A37A";
+                    document.getElementById("js04").value = "932BB696B6B6017EE4614F87B0B85105";
                 }
                 break;
             case 'GG':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "8D365C946565C3C774802FA62DABEA1C";
+                    document.getElementById("js04").value = "B4772F3F0A0AEB5994C22FAE4135BC5B";
                 } else {
-                    document.getElementById("js04").value = "9A2E9E9F0202CBB22438EF80DB41A2C6";
+                    document.getElementById("js04").value = "B970D6B7E1E18BEDD4C0EF9E6FFB3BB4";
                 }
                 break;
             default:
@@ -491,38 +491,38 @@ function showDivJS04(element) {
         switch (element.value) {
             case 'PP':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "DEDF93798F8F885444318FA91EFE0404";
+                    document.getElementById("js04").value = "2DCBDBA9CECE405BB4461FB3BE0E9D30";
                 } else {
-                    document.getElementById("js04").value = "BCC5C649A8A8E7FFF40F4F92476BF604";
+                    document.getElementById("js04").value = "7961529547478E8DD40D4F8F438DEFB3";
                 }
 
                 break;
             case 'P':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "0D15FB99BABACD2554495F88CC8C730E";
+                    document.getElementById("js04").value = "533268C52323896444AA9FB2BD689DFE";
                 } else {
-                    document.getElementById("js04").value = "ECF798E073736DC224ED1FB5CDCA7919";
+                    document.getElementById("js04").value = "AB5FFADFE9E933A994084F9171E023CE";
                 }
                 break;
             case 'M':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "39E5EB7BA8A8546224682FB037651635";
+                    document.getElementById("js04").value = "7F1334948484208334E27FBF5467F12A";
                 } else {
-                    document.getElementById("js04").value = "18E2D97D8F8F3EFBB42AAFA5069CF1A9";
+                    document.getElementById("js04").value = "CE4A00D88989AE8774B0BF96EA699EED";
                 }
                 break
             case 'G':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "7756A3C1F9F9695444688F8C6729E50F";
+                    document.getElementById("js04").value = "AC3604EF8282BD6774A22FA29536F645";
                 } else {
-                    document.getElementById("js04").value = "3F924F876969A66BB4794F9EF419C8B5";
+                    document.getElementById("js04").value = "F6726B45DBDB47DCC460CFBEFD494065";
                 }
                 break;
             case 'GG':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "D8C2289480808FB22469FFBA6F0D89BE";
+                    document.getElementById("js04").value = "CC7D8AF70202638554F61F8AF3657ED1";
                 } else {
-                    document.getElementById("js04").value = "69602615DFDFD1A004DF9FA28C717ABA";
+                    document.getElementById("js04").value = "1798585C2A2A95E554C4AFAD7371FCD4";
                 }
                 break;
             default:
@@ -534,38 +534,38 @@ function showDivJS04(element) {
         switch (element.value) {
             case 'PP':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "4333D2CC9C9CD62EE4C52F87FE44851A";
+                    document.getElementById("js04").value = "202C5EFD2A2A36E554E7BFA1017B6A13";
                 } else {
-                    document.getElementById("js04").value = "4122BA039595DBC00439EF91226B8EC4";
+                    document.getElementById("js04").value = "5A42AF752727EEFAA4867F9C0FAC020C";
                 }
 
                 break;
             case 'P':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "807E662322222E3DD4693FA21B40C8C8";
+                    document.getElementById("js04").value = "4537CA907D7D3D44440AEF96DAEC7DBA";
                 } else {
-                    document.getElementById("js04").value = "64C1C80F7D7DBAACC44B0FAAC739115C";
+                    document.getElementById("js04").value = "81F3FE39EBEB782884A31FBBD309FE12";
                 }
                 break;
             case 'M':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "B54D04672A2A5DABB409FF948179DA1C";
+                    document.getElementById("js04").value = "6B6987105E5E6EBBB44D2FB72FB8205F";
                 } else {
-                    document.getElementById("js04").value = "930757807F7FC45FF4735FA39B20D8EF";
+                    document.getElementById("js04").value = "AF89EC8439397582242BAFA8D81D3B69";
                 }
                 break
             case 'G':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "DDEEE8FC6F6F92BEE4525F88374C723D";
+                    document.getElementById("js04").value = "A8BCAA974E4EB54AA4396F9E7813E093";
                 } else {
-                    document.getElementById("js04").value = "BF48C367555520D334839FA92E7C4429";
+                    document.getElementById("js04").value = "D1194C6BD3D37C6CC4F31FA4E117E37C";
                 }
                 break;
             case 'GG':
                 if (cupomJS04 === "true") {
-                    document.getElementById("js04").value = "0502CA2EBCBCB68994360FAF5A1C6D76";
+                    document.getElementById("js04").value = "D2DDA6957B7BF4188457AFA8C313CAC3";
                 } else {
-                    document.getElementById("js04").value = "E8532738B8B8E2B114E51FB40FBB6BD2";
+                    document.getElementById("js04").value = "F79F7C10B2B25643349E6FB8B9C502FA";
                 }
                 break;
             default:
