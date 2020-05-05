@@ -702,19 +702,19 @@ function showDivJS09(element) {
     if (cor === "Preto") {
         switch (element.value) {
             case 'PP':
-                document.getElementById("js09").value = "0B2744BAA7A7D9F7742E3F9899B1FFEA";
+                document.getElementById("js09").value = "33B1B3950A0AF8F444327F8FC17C553F";
                 break;
             case 'P':
-                document.getElementById("js09").value = "513D361ABBBB10F884C68F964FD302F3";
+                document.getElementById("js09").value = "5B31A6A8B3B3D475542E0F87EC8A67F4";
                 break;
             case 'M':
-                document.getElementById("js09").value = "8CB92E166C6C87EDD4E58F85057392DA";
+                document.getElementById("js09").value = "81386A0B9090E8E77475FF8FFA6D42F1";
                 break
             case 'G':
-                document.getElementById("js09").value = "DE5CED8024249CD224BCAFB50288CF43";
+                document.getElementById("js09").value = "BC793D548787C9CCC4202F9D1127481F";
                 break;
             case 'GG':
-                document.getElementById("js09").value = "4B3E51314F4F381BB4FD2FA338A6B695";
+                document.getElementById("js09").value = "E4396168565625A444A86FBBA76AE5BF";
                 break;
             default:
                 console.log('Sorry, we are out of ' + expr + '.');
@@ -724,19 +724,19 @@ function showDivJS09(element) {
     if (cor === "Coral") {
         switch (element.value) {
             case 'PP':
-                document.getElementById("js09").value = "DA2550983737D5FDD464FF8D05D8FC78";
+                document.getElementById("js09").value = "1B5C8A76EBEBFAFCC4A6BFBB3838963A";
                 break;
             case 'P':
-                document.getElementById("js09").value = "06A4BAF00505B18004BD5F9A019FAD06";
+                document.getElementById("js09").value = "46062F68E3E35A2EE4867FB13413A5A9";
                 break;
             case 'M':
-                document.getElementById("js09").value = "33527B7C2B2B1AD004215F9781868443";
+                document.getElementById("js09").value = "70E8A4F48E8E873DD43BCFA199F4DB4A";
                 break
             case 'G':
-                document.getElementById("js09").value = "625EE47DA6A6B23AA4A1CFB8C77BD768";
+                document.getElementById("js09").value = "9AE7C017959540CBB47E5F81BE66C833";
                 break;
             case 'GG':
-                document.getElementById("js09").value = "8AE770FB7A7AB68CC4C0DF8619FBB2A0";
+                document.getElementById("js09").value = "D22661684545454884F99FA76A80D711";
                 break;
             default:
                 console.log('Sorry, we are out of ' + expr + '.');
@@ -746,20 +746,20 @@ function showDivJS09(element) {
     if (cor === "Azul") {
         switch (element.value) {
             case 'PP':
-                document.getElementById("js09").value = "53FEB9268B8BBB1334633FB399DD77F1";
+                document.getElementById("js09").value = "92FD065BA9A972FFF42AEFA56A420E6E";
 
                 break;
             case 'P':
-                document.getElementById("js09").value = "ED0A1D1CD6D6658AA4391FB615850C4D";
+                document.getElementById("js09").value = "F8E5422E5858C9A444356F86B5840851";
                 break;
             case 'M':
-                document.getElementById("js09").value = "466F81A0D2D26B45547BDFB1AF76FD01";
+                document.getElementById("js09").value = "1E156681B3B3B18444865FA984105ECE";
                 break
             case 'G':
-                document.getElementById("js09").value = "8A21FC7FE5E5C7588423FFAA7EFD41AD";
+                document.getElementById("js09").value = "4771298CAFAF7390047AAFB6E6BFBFF8";
                 break;
             case 'GG':
-                document.getElementById("js09").value = "CA7E092A9191BD9DD486BF9C41522B1B";
+                document.getElementById("js09").value = "6BF74A6B4D4DF6C664DACFA5D84AC8FA";
                 break;
             default:
                 console.log('Sorry, we are out of ' + expr + '.');
