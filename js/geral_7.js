@@ -212,7 +212,7 @@ function submitJS04(element) {
     let cor = document.getElementById("js04-cor").value;
     let tamanho = document.getElementById("js04-tamanho").value;
 
-    if (cor === "Off-white" && (tamanho === "46")) {
+    if (cor === "Off-white" && (tamanho === "46" || tamanho === "GG")) {
         document.getElementById("js04-esgotado").style.display = 'block';
 
     } else if (cor === "Preto" && (tamanho === "GG" || tamanho === "46")) {
