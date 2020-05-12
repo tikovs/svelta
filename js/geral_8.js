@@ -90,6 +90,10 @@ function alertasJS07() {
 
     alertCor.style.display = cor === "escolha" ? 'block' : 'none';
     alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
+
+
+    document.getElementById("cupomJS07-alerta-falha").style.display = 'none';
+    document.getElementById("cupomJS07-alerta-sucesso").style.display = 'none';
 }
 
 function alertasJS09() {
@@ -150,7 +154,7 @@ function cupomJS04(element) {
     let cupomJS04 = document.getElementById("cupomJS04").value;
     let cupomJS04Valido = document.getElementById("cupomJS04-valido").value;
 
-    if (cupomJS04 === "VITORIA" || cupomJS04 === "JULIANA"  || cupomJS04 === "ANITA" ) {
+    if (cupomJS04 === "VITORIA" || cupomJS04 === "JULIANA" || cupomJS04 === "ANITA") {
         document.getElementById("cupomJS04-valido").value = "true";
         document.getElementById("priceJS04").value = "R$372,83";
         document.getElementById("cupomJS04-alerta-falha").style.display = 'none';
@@ -160,6 +164,22 @@ function cupomJS04(element) {
         document.getElementById("cupomJS04-alerta-falha").style.display = 'block';
         document.getElementById("cupomJS04-alerta-sucesso").style.display = 'none';
         document.getElementById("priceJS04").value = "R$397,72";
+    }
+}
+
+function cupomJS07(element) {
+    let cupomJS07 = document.getElementById("cupomJS07").value;
+
+    if (cupomJS07 === "NANDA") {
+        document.getElementById("cupomJS07-valido").value = "true";
+        document.getElementById("priceJS07").value = "R$461,60";
+        document.getElementById("cupomJS07-alerta-falha").style.display = 'none';
+        document.getElementById("cupomJS07-alerta-sucesso").style.display = 'block';
+    } else {
+        document.getElementById("cupomJS07-valido").value = "false";
+        document.getElementById("cupomJS07-alerta-falha").style.display = 'block';
+        document.getElementById("cupomJS07-alerta-sucesso").style.display = 'none';
+        document.getElementById("priceJS07").value = "R$577,00";
     }
 }
 
@@ -673,20 +693,36 @@ function showDivJS06(element) {
 function showDivJS07(element) {
     alertasJS07();
     let cor = document.getElementById("js07-cor").value;
+    let cupomJS07 = document.getElementById("cupomJS07-valido").value;
 
     switch (element.value) {
         case 'PP':
-            document.getElementById("js07").value = cor === "Metalizado" ? '3B7A7AF6E4E4B0977400DF822210B339' : '';
-
+            if (cupomJS07 === "true") {
+                document.getElementById("js07").value = cor === "Metalizado" ? 'FF4DDC6896966226643EFFBD0203E8FB' : '';
+            } else {
+                document.getElementById("js07").value = cor === "Metalizado" ? '3B7A7AF6E4E4B0977400DF822210B339' : '';
+            }
             break;
         case 'P':
-            document.getElementById("js07").value = cor === "Metalizado" ? 'C9977E7DC2C2A931146BAF8A9C47CA7C' : '';
+            if (cupomJS07 === "true") {
+                document.getElementById("js07").value = cor === "Metalizado" ? '5AC4E4CC2929577BB4DF2F9238977F84' : '';
+            } else {
+                document.getElementById("js07").value = cor === "Metalizado" ? 'C9977E7DC2C2A931146BAF8A9C47CA7C' : '';
+            }
             break;
         case 'M':
-            document.getElementById("js07").value = cor === "Metalizado" ? '22CF113E5A5A3D94449ADFB49FFF184B' : '';
+            if (cupomJS07 === "true") {
+                document.getElementById("js07").value = cor === "Metalizado" ? '9CF8D4781F1F31D664674F915E3F8A2F' : '';
+            } else {
+                document.getElementById("js07").value = cor === "Metalizado" ? '22CF113E5A5A3D94449ADFB49FFF184B' : '';
+            }
             break
         case 'G':
-            document.getElementById("js07").value = cor === "Metalizado" ? '8B2032178787EB88849A0F80596538A5' : '';
+            if (cupomJS07 === "true") {
+                document.getElementById("js07").value = cor === "Metalizado" ? 'CB3FAA42C9C9403EE45A2FBA6989D61E' : '';
+            } else {
+                document.getElementById("js07").value = cor === "Metalizado" ? '8B2032178787EB88849A0F80596538A5' : '';
+            }
             break;
         default:
             console.log('Sorry, we are out of ' + expr + '.');
