@@ -238,7 +238,7 @@ function submitJS04(element) {
     } else if (cor === "Preto" && (tamanho === "GG" || tamanho === "46")) {
         document.getElementById("js04-esgotado").style.display = 'block';
 
-    } else if (cor === "Vermelho" && (tamanho === "G" || tamanho === "P" || tamanho ==="PP" || tamanho ==="GG")) {
+    } else if (cor === "Vermelho") {
         document.getElementById("js04-esgotado").style.display = 'block';
 
     } else {
