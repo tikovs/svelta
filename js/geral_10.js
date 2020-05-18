@@ -238,7 +238,7 @@ function submitJS04(element) {
     } else if (cor === "Preto" && (tamanho === "GG" || tamanho === "46")) {
         document.getElementById("js04-esgotado").style.display = 'block';
 
-    } else if (cor === "Vermelho") {
+    } else if (cor === "Vermelho" && (tamanho === "PP" || tamanho === "G" || tamanho === "P" || tamanho === "44")) {
         document.getElementById("js04-esgotado").style.display = 'block';
 
     } else {
@@ -455,7 +455,11 @@ function showDivJS04(element) {
                 document.getElementById("js04").value = "A5460CA12121BFB224EE9FBACFCC6D4C";
                 break;
             case 'M':
-                document.getElementById("js04").value = "32555E7CDEDE5A133444DF9BBC389166";
+                if(cupomJS04 === "true"){
+                    document.getElementById("js04").value = "F0D627868C8C4F6224FB2F9032B5A842";
+                }else{
+                    document.getElementById("js04").value = "32555E7CDEDE5A133444DF9BBC389166";
+                }
                 break
             case 'G':
                 document.getElementById("js04").value = "F4CB4D79B8B8700DD46A1F87F2CE3848";
