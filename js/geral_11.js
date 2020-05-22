@@ -256,9 +256,8 @@ function submitJS04(element) {
     if (cor === "Off-white" && (tamanho === "46" || tamanho === "GG")) {
         document.getElementById("js04-esgotado").style.display = 'block';
 
-    } else if (cor === "Preto" && (tamanho === "GG" || tamanho === "46")) {
+    } else if (cor === "Preto" && (tamanho === "GG" || tamanho === "46" || tamanho === "G")) {
         document.getElementById("js04-esgotado").style.display = 'block';
-
     } else if (cor === "Vermelho") {
         document.getElementById("js04-esgotado").style.display = 'block';
 
