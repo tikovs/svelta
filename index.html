@@ -1967,7 +1967,14 @@
 
                                             <div class="mb-4">
                                                 <h3 class="text-black font-weight-bold h5">Preço:</h3>
-                                                <div class="price"> R$337,73</div>
+                                                <div class="price"> <input id="priceJS09" value="R$337,73" readonly style="border: 0"/></div>
+                                            </div>
+
+                                            <div class="alert alert-success" id="cupomJS09-alerta-sucesso" style="display: none"  role="alert">
+                                                O cumpom foi aplicado com sucesso.
+                                            </div>
+                                            <div class="alert alert-warning" id="cupomJS09-alerta-falha"  style="display: none"  role="alert">
+                                                     O cupom não é válido.
                                             </div>
 
                                             <div class="mb-4">
@@ -2005,6 +2012,11 @@
 
                                             <p>
                                                     <button onclick="submitJS09()" class="btn btn-black btn-outline-black rounded-0 d-block mb-2 mb-lg-0 d-lg-inline-block float-left mr-2 col-12">Comprar</button>
+                                                    <div class="col-12 row pt-2">
+                                                        <input id="cupomJS09" type="text" class="col-4 form-control rounded-0"/>
+                                                        <input id="cupomJS09-valido" type="hidden" value="false" class=" form-control rounded-0"/>
+                                                        <button onclick="cupomJS09()" class="col-7 btn btn-black btn-outline-black rounded-0 ml-1">Aplicar cupom</button>
+                                                    </div>
                                             </p>
 
 
@@ -2158,7 +2170,7 @@
 
 
                 <script src="js/main.js"></script>
-                <script src="js/geral_11.js"></script>
+                <script src="js/geral_10.js"></script>
 
 
 

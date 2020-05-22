@@ -105,6 +105,10 @@ function alertasJS09() {
 
     alertCor.style.display = cor === "escolha" ? 'block' : 'none';
     alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
+
+
+    document.getElementById("cupomJS09-alerta-falha").style.display = 'none';
+    document.getElementById("cupomJS09-alerta-sucesso").style.display = 'none';
 }
 
 
@@ -180,6 +184,23 @@ function cupomJS07(element) {
         document.getElementById("cupomJS07-alerta-falha").style.display = 'block';
         document.getElementById("cupomJS07-alerta-sucesso").style.display = 'none';
         document.getElementById("priceJS07").value = "R$577,00";
+    }
+}
+
+function cupomJS09(element) {
+    let cupomJS09 = document.getElementById("cupomJS09").value;
+    let cupomJS09Valido = document.getElementById("cupomJS09-valido").value;
+
+    if (cupomJS09 === "SHANTAL") {
+        document.getElementById("cupomJS09-valido").value = "true";
+        document.getElementById("priceJS09").value = "R$303,95";
+        document.getElementById("cupomJS09-alerta-falha").style.display = 'none';
+        document.getElementById("cupomJS09-alerta-sucesso").style.display = 'block';
+    } else {
+        document.getElementById("cupomJS09-valido").value = "false";
+        document.getElementById("cupomJS09-alerta-falha").style.display = 'block';
+        document.getElementById("cupomJS09-alerta-sucesso").style.display = 'none';
+        document.getElementById("priceJS09").value = "R$337,73";
     }
 }
 
@@ -455,9 +476,9 @@ function showDivJS04(element) {
                 document.getElementById("js04").value = "A5460CA12121BFB224EE9FBACFCC6D4C";
                 break;
             case 'M':
-                if(cupomJS04 === "true"){
+                if (cupomJS04 === "true") {
                     document.getElementById("js04").value = "F0D627868C8C4F6224FB2F9032B5A842";
-                }else{
+                } else {
                     document.getElementById("js04").value = "32555E7CDEDE5A133444DF9BBC389166";
                 }
                 break
@@ -738,23 +759,44 @@ function showDivJS07(element) {
 function showDivJS09(element) {
     alertasJS09();
     let cor = document.getElementById("js09-cor").value;
+    let cupomJS09 = document.getElementById("cupomJS09-valido").value;
 
     if (cor === "Preto") {
         switch (element.value) {
             case 'PP':
-                document.getElementById("js09").value = "33B1B3950A0AF8F444327F8FC17C553F";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "37C109AC7070D808846D7FA3C13F26AB";
+                } else {
+                    document.getElementById("js09").value = "33B1B3950A0AF8F444327F8FC17C553F";
+                }
                 break;
             case 'P':
-                document.getElementById("js09").value = "5B31A6A8B3B3D475542E0F87EC8A67F4";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "6D7CE3139F9FFC0CC4B95F9A652A5FEF";
+                } else {
+                    document.getElementById("js09").value = "5B31A6A8B3B3D475542E0F87EC8A67F4";
+                }
                 break;
             case 'M':
-                document.getElementById("js09").value = "81386A0B9090E8E77475FF8FFA6D42F1";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "9F71F910D3D3029AA400CFA88772CA87";
+                } else {
+                    document.getElementById("js09").value = "81386A0B9090E8E77475FF8FFA6D42F1";
+                }
                 break
             case 'G':
-                document.getElementById("js09").value = "BC793D548787C9CCC4202F9D1127481F";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "FA3E99F91B1B44BBB402DFB6980ADE17";
+                } else {
+                    document.getElementById("js09").value = "BC793D548787C9CCC4202F9D1127481F";
+                }
                 break;
             case 'GG':
-                document.getElementById("js09").value = "E4396168565625A444A86FBBA76AE5BF";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "28F7333282825CB884215F9E4BE067DA";
+                } else {
+                    document.getElementById("js09").value = "E4396168565625A444A86FBBA76AE5BF";
+                }
                 break;
             default:
                 console.log('Sorry, we are out of ' + expr + '.');
@@ -764,19 +806,39 @@ function showDivJS09(element) {
     if (cor === "Coral") {
         switch (element.value) {
             case 'PP':
-                document.getElementById("js09").value = "1B5C8A76EBEBFAFCC4A6BFBB3838963A";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "C678955F7878426664A6CFA589C585BA";
+                } else {
+                    document.getElementById("js09").value = "1B5C8A76EBEBFAFCC4A6BFBB3838963A";
+                }
                 break;
             case 'P':
-                document.getElementById("js09").value = "46062F68E3E35A2EE4867FB13413A5A9";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "FEB0A6C6CECE0C6994BEEF96F043F945";
+                } else {
+                    document.getElementById("js09").value = "46062F68E3E35A2EE4867FB13413A5A9";
+                }
                 break;
             case 'M':
-                document.getElementById("js09").value = "70E8A4F48E8E873DD43BCFA199F4DB4A";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "599F389668681BCBB4CB4FA0A6EBC9EF";
+                } else {
+                    document.getElementById("js09").value = "70E8A4F48E8E873DD43BCFA199F4DB4A";
+                }
                 break
             case 'G':
-                document.getElementById("js09").value = "9AE7C017959540CBB47E5F81BE66C833";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "915BDB811F1FD60994251FAB2429EC07";
+                } else {
+                    document.getElementById("js09").value = "9AE7C017959540CBB47E5F81BE66C833";
+                }
                 break;
             case 'GG':
-                document.getElementById("js09").value = "D22661684545454884F99FA76A80D711";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "CC8DCFF8D4D4555114B81FAB02440D87";
+                } else {
+                    document.getElementById("js09").value = "D22661684545454884F99FA76A80D711";
+                }
                 break;
             default:
                 console.log('Sorry, we are out of ' + expr + '.');
@@ -786,20 +848,40 @@ function showDivJS09(element) {
     if (cor === "Azul") {
         switch (element.value) {
             case 'PP':
-                document.getElementById("js09").value = "92FD065BA9A972FFF42AEFA56A420E6E";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "E2F64F8CC8C8537114788F9C93C3F058";
+                } else {
+                    document.getElementById("js09").value = "92FD065BA9A972FFF42AEFA56A420E6E";
+                }
 
                 break;
             case 'P':
-                document.getElementById("js09").value = "F8E5422E5858C9A444356F86B5840851";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "9078ACD2A0A01E7BB4FE6F9A5013984F";
+                } else {
+                    document.getElementById("js09").value = "F8E5422E5858C9A444356F86B5840851";
+                }
                 break;
             case 'M':
-                document.getElementById("js09").value = "1E156681B3B3B18444865FA984105ECE";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "C88932A16F6F3C3BB4D73FA3C9806531";
+                } else {
+                    document.getElementById("js09").value = "1E156681B3B3B18444865FA984105ECE";
+                }
                 break
             case 'G':
-                document.getElementById("js09").value = "4771298CAFAF7390047AAFB6E6BFBFF8";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "0AD993914949A09224347FA3020BBE9E";
+                } else {
+                    document.getElementById("js09").value = "4771298CAFAF7390047AAFB6E6BFBFF8";
+                }
                 break;
             case 'GG':
-                document.getElementById("js09").value = "6BF74A6B4D4DF6C664DACFA5D84AC8FA";
+                if (cupomJS09 === "true") {
+                    document.getElementById("js09").value = "562D59690909B5F4448B1FBC35DCE7E9";
+                } else {
+                    document.getElementById("js09").value = "6BF74A6B4D4DF6C664DACFA5D84AC8FA";
+                }
                 break;
             default:
                 console.log('Sorry, we are out of ' + expr + '.');
