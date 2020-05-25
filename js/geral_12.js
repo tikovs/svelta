@@ -331,6 +331,8 @@ function submitJS09(element) {
     if (cor === "Coral" && (tamanho === "GG")) {
         document.getElementById("js09-esgotado").style.display = 'block';
 
+    } else if (cor === "Preto" && (tamanho === "P")) {
+        document.getElementById("js09-esgotado").style.display = 'block';
     } else {
         if (cor !== "escolha" && tamanho !== "escolha") {
             showDivJS09(document.getElementById("js09-tamanho"));
