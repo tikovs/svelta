@@ -281,7 +281,10 @@ function submitJS05(element) {
         document.getElementById("js05-esgotado").style.display = 'block';
     } else if (cor === "Branco" && (tamanho === "G" || tamanho === "PP")) {
         document.getElementById("js05-esgotado").style.display = 'block';
-    } else {
+    } else if (cor === "Degrade" && (tamanho === "G" || tamanho === "PP"|| tamanho === "M")) {
+        document.getElementById("js05-esgotado").style.display = 'block';
+    }
+    else {
         if (cor !== "escolha" && tamanho !== "escolha") {
             showDivJS05(document.getElementById("js05-tamanho"));
             document.getElementById("js05-esgotado").style.display = 'none';
@@ -631,16 +634,16 @@ function showDivJS05(element) {
     if (cor === "Branco") {
         switch (element.value) {
             case 'PP':
-                document.getElementById("js05").value = "E738F3D6E5E56EE8849A2F961FEAB1FC";
+                document.getElementById("js05").value = "";
                 break;
             case 'P':
-                document.getElementById("js05").value = "370471BEB8B896699427EF9C9978E3A3";
+                document.getElementById("js05").value = "BCCB19EDE6E6729004E47FBAB97C1C15";
                 break;
             case 'M':
-                document.getElementById("js05").value = "7226F6094747037EE499DFA531EE487C";
+                document.getElementById("js05").value = "FFCEC9D50D0D807BB464AF817C8868EC";
                 break
             case 'G':
-                document.getElementById("js05").value = "9F974A1FD1D1BAAEE4663F9401CEC139";
+                document.getElementById("js05").value = "";
                 break;
             default:
                 console.log('Sorry, we are out of ' + expr + '.');
@@ -650,31 +653,31 @@ function showDivJS05(element) {
     if (cor === "Off-white") {
         switch (element.value) {
             case 'PP':
-                document.getElementById("js05").value = "EE9A58394545C9B77444DFAC63A109B2";
+                document.getElementById("js05").value = "6F56EBCF1717382BB4878FBF4AB64A7A";
 
                 break;
             case 'P':
-                document.getElementById("js05").value = "25D6C19765650FE774A6EF9A16CA6774";
+                document.getElementById("js05").value = "A11B46A02222C9C114D0CF9BA7A98B0C";
                 break;
             case 'M':
-                document.getElementById("js05").value = "57D6EF6E25259F233456FFB5FDA85BD5";
+                document.getElementById("js05").value = "";
                 break
             case 'G':
-                document.getElementById("js05").value = "86816B949F9F4C111480EF810D1495F7";
+                document.getElementById("js05").value = "";
                 break;
             default:
                 console.log('Sorry, we are out of ' + expr + '.');
         }
     }
 
-    if (cor === "Prata") {
+    if (cor === "Degrade") {
         switch (element.value) {
             case 'PP':
                 document.getElementById("js05").value = "";
 
                 break;
             case 'P':
-                document.getElementById("js05").value = "";
+                document.getElementById("js05").value = "ED6D31401717C38BB4840F84DCCE1E0E";
                 break;
             case 'M':
                 document.getElementById("js05").value = "";
