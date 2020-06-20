@@ -120,7 +120,7 @@ function submitJS01(element) {
     if (cor === "Preto") {
         document.getElementById("js01-esgotado").style.display = 'block';
 
-    } else if (cor === "Champagne" && tamanho === "M") {
+    } else if (cor === "Champagne" && (tamanho === "M" || tamanho === "PP")) {
         document.getElementById("js01-esgotado").style.display = 'block';
     }
     else {
