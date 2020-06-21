@@ -261,6 +261,9 @@ function submitJS04(element) {
     } else if (cor === "Vermelho") {
         document.getElementById("js04-esgotado").style.display = 'block';
 
+    }
+    else if (cor === "Azul" && (tamanho === "46" || tamanho === "PP")) {
+        document.getElementById("js04-esgotado").style.display = 'block';
     } else {
         if (cor !== "escolha" && tamanho !== "escolha") {
             showDivJS04(document.getElementById("js04-tamanho"));
@@ -281,7 +284,7 @@ function submitJS05(element) {
         document.getElementById("js05-esgotado").style.display = 'block';
     } else if (cor === "Branco" && (tamanho === "G" || tamanho === "PP")) {
         document.getElementById("js05-esgotado").style.display = 'block';
-    } else if (cor === "Degrade" && (tamanho === "G" || tamanho === "PP"|| tamanho === "M")) {
+    } else if (cor === "Degrade" && (tamanho === "G" || tamanho === "PP" || tamanho === "M")) {
         document.getElementById("js05-esgotado").style.display = 'block';
     }
     else {
