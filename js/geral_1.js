@@ -262,7 +262,7 @@ function submitJS04(element) {
         document.getElementById("js04-esgotado").style.display = 'block';
 
     }
-    else if (cor === "Azul" && (tamanho === "46" || tamanho === "PP")) {
+    else if (cor === "Azul" && (tamanho === "46" || tamanho === "PP" || tamanho === "M")) {
         document.getElementById("js04-esgotado").style.display = 'block';
     } else {
         if (cor !== "escolha" && tamanho !== "escolha") {
