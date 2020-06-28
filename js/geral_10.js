@@ -7,6 +7,7 @@ function callAlertas() {
     alertasJS06();
     alertasJS07();
     alertasJS09();
+    alertasJS11();
 }
 
 function alertasJS01() {
@@ -111,6 +112,21 @@ function alertasJS09() {
     document.getElementById("cupomJS09-alerta-sucesso").style.display = 'none';
 }
 
+function alertasJS11() {
+    let cor = document.getElementById("js11-cor").value;
+    let alertCor = document.getElementById("js11-campo-cor");
+
+    let tamanho = document.getElementById("js11-tamanho").value;
+    let alertTamanho = document.getElementById("js11-campo-tamanho");
+
+    alertCor.style.display = cor === "escolha" ? 'block' : 'none';
+    alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
+
+    document.getElementById("cupomJS11-alerta-falha").style.display = 'none';
+    document.getElementById("cupomJS11-alerta-sucesso").style.display = 'none';
+}
+
+
 
 
 function submitJS01(element) {
@@ -168,6 +184,23 @@ function cupomJS04(element) {
         document.getElementById("cupomJS04-alerta-falha").style.display = 'block';
         document.getElementById("cupomJS04-alerta-sucesso").style.display = 'none';
         document.getElementById("priceJS04").value = "R$397,72";
+    }
+}
+
+function cupomJS11(element) {
+    let cupomJS11 = document.getElementById("cupomJS11").value;
+    let cupomJS11Valido = document.getElementById("cupomJS11-valido").value;
+
+    if (cupomJS11 === "FRETE") {
+        document.getElementById("cupomJS11-valido").value = "true";
+        document.getElementById("priceJS11").value = "R$487,37 / Frete Grátis *";
+        document.getElementById("cupomJS11-alerta-falha").style.display = 'none';
+        document.getElementById("cupomJS11-alerta-sucesso").style.display = 'block';
+    } else {
+        document.getElementById("cupomJS11-valido").value = "false";
+        document.getElementById("cupomJS11-alerta-falha").style.display = 'block';
+        document.getElementById("cupomJS11-alerta-sucesso").style.display = 'none';
+        document.getElementById("priceJS11").value = "R$487,37";
     }
 }
 
@@ -346,6 +379,27 @@ function submitJS09(element) {
             document.getElementById("js09-pagseguro").submit();
         }
     }
+}
+
+
+function submitJS11(element) {
+    let cor = document.getElementById("js11-cor").value;
+    let tamanho = document.getElementById("js11-tamanho").value;
+
+    if (cor === "ESSA COR NAO TEM" && (tamanho === "46" || tamanho === "GG")) {
+        document.getElementById("js11-esgotado").style.display = 'block';
+
+    }
+    else if (cor === "NAO TEM ESSA COR" && (tamanho === "46" || tamanho === "PP" || tamanho === "M")) {
+        document.getElementById("js11-esgotado").style.display = 'block';
+    } else {
+        if (cor !== "escolha" && tamanho !== "escolha") {
+            showDivJS11(document.getElementById("js11-tamanho"));
+            document.getElementById("js11-esgotado").style.display = 'none';
+            document.getElementById("js11-pagseguro").submit();
+        }
+    }
+
 }
 
 
@@ -903,6 +957,113 @@ function showDivJS09(element) {
     }
 
 
+}
+
+
+
+
+
+function showDivJS11(element) {
+    alertasJS11();
+    let cor = document.getElementById("js11-cor").value;
+    let cupomJS11 = document.getElementById("cupomJS11-valido").value;
+
+    if (cor === "Preto") {
+        switch (element.value) {
+            case 'PP':
+                if (cupomJS11 === "true") {
+                    document.getElementById("js11").value = "9255FBFDEAEA30077478DFAF97EE4D40";
+                } else {
+                    document.getElementById("js11").value = "5C717BBE76765C2AA4424F89DAAD1EE2";
+                }
+                break;
+            case 'P':
+                if (cupomJS11 === "true") {
+                    document.getElementById("js11").value = "3C18E07B1F1F0614449A5F9EF3FE98F5";
+                } else {
+                    document.getElementById("js11").value = "8794FCC2353542022423CFB509795623";
+                }
+                break;
+            case 'M':
+                if (cupomJS11 === "true") {
+                    document.getElementById("js11").value = "38507B09595961D334A03F8F6A3E08AD";
+                } else {
+                    document.getElementById("js11").value = "B2D7B21221211D19942CBF81AFB9A03F";
+                }
+                break
+            case 'G':
+                if (cupomJS11 === "true") {
+                    document.getElementById("js11").value = "7433C494383834D224804F8CA253DDDE";
+                } else {
+                    document.getElementById("js11").value = "D98668589E9E3F8BB4639FB84C5C2D51";
+                }
+                break
+            case 'GG':
+                if (cupomJS11 === "true") {
+                    document.getElementById("js11").value = "AB79B135F6F60F8CC4546FBD1525163F";
+                } else {
+                    document.getElementById("js11").value = "0292B54FEAEA18D3343B2F90526FBA8B";
+                }
+            case '46':
+                if (cupomJS11 === "true") {
+                    document.getElementById("js11").value = "9B5419B3DCDC56B11443EFB3FD5F6BEF";
+                } else {
+                    document.getElementById("js11").value = "4F0170D193939A311457AF99F43AE4FB";
+                }
+                break;
+            default:
+                console.log('Sorry, we are out of ' + expr + '.');
+        }
+    }
+
+    if (cor === "Xadrez") {
+        switch (element.value) {
+            case 'PP':
+                if (cupomJS11 === "true") {
+                    document.getElementById("js11").value = "32D97225D7D7981BB4270F9F879E6B0B";
+                } else {
+                    document.getElementById("js11").value = "49CF4BA19797E5ABB440CFADED1370E4";
+                }
+                break;
+            case 'P':
+                if (cupomJS11 === "true") {
+                    document.getElementById("js11").value = "6FF979F05D5DCBB9941CFFB8EDD1FDCF";
+                } else {
+                    document.getElementById("js11").value = "795918D0ABAB36F554017F82A181EDF9";
+                }
+                break;
+            case 'M':
+                if (cupomJS11 === "true") {
+                    document.getElementById("js11").value = "9E4D28CBB4B4A78BB4D33F97AE6F979A";
+                } else {
+                    document.getElementById("js11").value = "A55C68B5B3B329D554801FB23B2385C0";
+                }
+                break
+            case 'G':
+                if (cupomJS11 === "true") {
+                    document.getElementById("js11").value = "CEAEFA08A6A60125543F6F8452953983";
+                } else {
+                    document.getElementById("js11").value = "E04257D6FCFC962EE4A4EFA84FE6C937";
+                }
+                break;
+            case 'GG':
+                if (cupomJS11 === "true") {
+                    document.getElementById("js11").value = "F476C5B40707124AA4F5FF8AFFD4D37E";
+                } else {
+                    document.getElementById("js11").value = "07A7554BFBFB479FF4568FAE71C436B2";
+                }
+                break;
+            case '46':
+                if (cupomJS11 === "true") {
+                    document.getElementById("js11").value = "3566227CD8D8751AA4C36F83FF9F7769";
+                } else {
+                    document.getElementById("js11").value = "5A05BD7B2323F4EFF41E3F8AA6EC3C8D";
+                }
+                break;
+            default:
+                console.log('Sorry, we are out of ' + expr + '.');
+        }
+    }
 }
 
 
