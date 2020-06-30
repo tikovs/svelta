@@ -1004,7 +1004,7 @@ function showDivJS11(element) {
                 } else {
                     document.getElementById("js11").value = "0292B54FEAEA18D3343B2F90526FBA8B";
                 }
-            case '46':
+            case 'XGG':
                 if (cupomJS11 === "true") {
                     document.getElementById("js11").value = "9B5419B3DCDC56B11443EFB3FD5F6BEF";
                 } else {
@@ -1053,7 +1053,7 @@ function showDivJS11(element) {
                     document.getElementById("js11").value = "07A7554BFBFB479FF4568FAE71C436B2";
                 }
                 break;
-            case '46':
+            case 'XGG':
                 if (cupomJS11 === "true") {
                     document.getElementById("js11").value = "3566227CD8D8751AA4C36F83FF9F7769";
                 } else {
