@@ -1,4 +1,5 @@
 function callAlertas() {
+    openModal();
     alertasJS01();
     alertasJS02();
     alertasJS03();
@@ -8,6 +9,45 @@ function callAlertas() {
     alertasJS07();
     alertasJS09();
     alertasJS11();
+}
+
+function openModal() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const code = urlParams.get('code');
+
+    switch (code) {
+        case 'JS01':
+            $('#modalProductJS01').modal('show');
+            break;
+        case 'JS02':
+            $('#modalProductJS02').modal('show');
+            break;
+        case 'JS03':
+            $('#modalProductJS03').modal('show');
+            break;
+        case 'JS04':
+            $('#modalProductJS04').modal('show');
+            break;
+        case 'JS05':
+            $('#modalProductJS05').modal('show');
+            break;
+        case 'JS06':
+            $('#modalProductJS06').modal('show');
+            break;
+        case 'JS07':
+            $('#modalProductJS07').modal('show');
+            break;
+        case 'JS09':
+            $('#modalProductJS09').modal('show');
+            break;
+        case 'JS11':
+            $('#modalProductJS11').modal('show');
+            break;
+        default:
+            console.log("nothing");
+            break;
+    }
 }
 
 function alertasJS01() {
