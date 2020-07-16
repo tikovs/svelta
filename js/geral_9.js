@@ -231,7 +231,7 @@ function cupomJS11(element) {
     let cupomJS11 = document.getElementById("cupomJS11").value;
     let cupomJS11Valido = document.getElementById("cupomJS11-valido").value;
 
-    if (cupomJS11 === "FRETE") {
+    if (cupomJS11 === "FRETE" || cupomJS11 === "LAYLA") {
         document.getElementById("cupomJS11-valido").value = "true";
         document.getElementById("priceJS11").value = "R$487,37 / Frete Grátis *";
         document.getElementById("cupomJS11-alerta-falha").style.display = 'none';
