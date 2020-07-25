@@ -371,7 +371,7 @@ function submitJS04(element) {
         document.getElementById("js04-esgotado").style.display = 'block';
 
     }
-    else if (cor === "Azul" && (tamanho === "46" || tamanho === "PP" || tamanho === "M")) {
+    else if (cor === "Azul" && (tamanho === "46" || tamanho === "PP" || tamanho === "P" || tamanho === "M")) {
         document.getElementById("js04-esgotado").style.display = 'block';
     } else {
         if (cor !== "escolha" && tamanho !== "escolha") {
