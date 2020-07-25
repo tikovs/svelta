@@ -446,7 +446,7 @@ function submitJS09(element) {
     if (cor === "Coral" && (tamanho === "GG" || tamanho === "G")) {
         document.getElementById("js09-esgotado").style.display = 'block';
 
-    } else if (cor === "Preto" && (tamanho === "P")) {
+    } else if (cor === "Preto" && (tamanho === "P" || tamanho === "G")) {
         document.getElementById("js09-esgotado").style.display = 'block';
     } else {
         if (cor !== "escolha" && tamanho !== "escolha") {
