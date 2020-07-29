@@ -486,7 +486,7 @@ function submitJS11(element) {
     let cor = document.getElementById("js11-cor").value;
     let tamanho = document.getElementById("js11-tamanho").value;
 
-    if (cor === "ESSA COR NAO TEM" && (tamanho === "46" || tamanho === "GG")) {
+    if (cor === "Preto" && (tamanho === "M")) {
         document.getElementById("js11-esgotado").style.display = 'block';
 
     }
