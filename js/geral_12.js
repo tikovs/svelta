@@ -468,7 +468,7 @@ function submitJS10(element) {
     else if (cor === "Rosa" && (tamanho === "XGG")) {
         document.getElementById("js10-esgotado").style.display = 'block';
     }
-    else if (cor === "Turquesa" && (tamanho === "XGG")) {
+    else if (cor === "Turquesa" && (tamanho === "XGG" || tamanho === "M")) {
         document.getElementById("js10-esgotado").style.display = 'block';
     } else {
         if (cor !== "escolha" && tamanho !== "escolha") {
