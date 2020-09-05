@@ -1,5 +1,4 @@
 function callAlertas() {
-    openModal();
     alertasJS01();
     alertasJS02();
     alertasJS03();
@@ -8,50 +7,6 @@ function callAlertas() {
     alertasJS06();
     alertasJS07();
     alertasJS09();
-    alertasJS10();
-    alertasJS11();
-}
-
-function openModal() {
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const code = urlParams.get('code');
-
-    switch (code) {
-        case 'JS01':
-            $('#modalProductJS01').modal('show');
-            break;
-        case 'JS02':
-            $('#modalProductJS02').modal('show');
-            break;
-        case 'JS03':
-            $('#modalProductJS03').modal('show');
-            break;
-        case 'JS04':
-            $('#modalProductJS04').modal('show');
-            break;
-        case 'JS05':
-            $('#modalProductJS05').modal('show');
-            break;
-        case 'JS06':
-            $('#modalProductJS06').modal('show');
-            break;
-        case 'JS07':
-            $('#modalProductJS07').modal('show');
-            break;
-        case 'JS09':
-            $('#modalProductJS09').modal('show');
-            break;
-        case 'JS10':
-            $('#modalProductJS10').modal('show');
-            break;
-        case 'JS11':
-            $('#modalProductJS11').modal('show');
-            break;
-        default:
-            console.log("nothing");
-            break;
-    }
 }
 
 function alertasJS01() {
@@ -156,36 +111,6 @@ function alertasJS09() {
     document.getElementById("cupomJS09-alerta-sucesso").style.display = 'none';
 }
 
-function alertasJS11() {
-    let cor = document.getElementById("js11-cor").value;
-    let alertCor = document.getElementById("js11-campo-cor");
-
-    let tamanho = document.getElementById("js11-tamanho").value;
-    let alertTamanho = document.getElementById("js11-campo-tamanho");
-
-    alertCor.style.display = cor === "escolha" ? 'block' : 'none';
-    alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
-
-    document.getElementById("cupomJS11-alerta-falha").style.display = 'none';
-    document.getElementById("cupomJS11-alerta-sucesso").style.display = 'none';
-}
-
-
-function alertasJS10() {
-    let cor = document.getElementById("js10-cor").value;
-    let alertCor = document.getElementById("js10-campo-cor");
-
-    let tamanho = document.getElementById("js10-tamanho").value;
-    let alertTamanho = document.getElementById("js10-campo-tamanho");
-
-    alertCor.style.display = cor === "escolha" ? 'block' : 'none';
-    alertTamanho.style.display = tamanho === "escolha" ? 'block' : 'none';
-
-    document.getElementById("cupomJS10-alerta-falha").style.display = 'none';
-    document.getElementById("cupomJS10-alerta-sucesso").style.display = 'none';
-}
-
-
 
 
 function submitJS01(element) {
@@ -212,11 +137,11 @@ function submitJS01(element) {
 
 function cupomJS02(element) {
     let cupomJS02 = document.getElementById("cupomJS02").value;
+    let cupomJS02Valido = document.getElementById("cupomJS02-valido").value;
 
-
-    if (cupomJS02 === "JU") {
+    if (cupomJS02 === "NAOEXISTECUPOMAQUIAINDA25212") {
         document.getElementById("cupomJS02-valido").value = true;
-        document.getElementById("priceJS02").value = "R$327,39";
+        document.getElementById("priceJS02").value = "R$300,77";
         document.getElementById("cupomJS02-alerta-falha").style.display = 'none';
         document.getElementById("cupomJS02-alerta-sucesso").style.display = 'block';
     } else {
@@ -231,6 +156,7 @@ function cupomJS02(element) {
 
 function cupomJS04(element) {
     let cupomJS04 = document.getElementById("cupomJS04").value;
+    let cupomJS04Valido = document.getElementById("cupomJS04-valido").value;
 
     if (cupomJS04 === "VITORIA" || cupomJS04 === "JULIANA" || cupomJS04 === "ANITA" || cupomJS04 === "YASMIN") {
         document.getElementById("cupomJS04-valido").value = "true";
@@ -242,41 +168,6 @@ function cupomJS04(element) {
         document.getElementById("cupomJS04-alerta-falha").style.display = 'block';
         document.getElementById("cupomJS04-alerta-sucesso").style.display = 'none';
         document.getElementById("priceJS04").value = "R$397,72";
-    }
-}
-
-function cupomJS11(element) {
-    let cupomJS11 = document.getElementById("cupomJS11").value;
-
-    if (cupomJS11 === "FRETE" || cupomJS11 === "LAYLA") {
-        document.getElementById("cupomJS11-valido").value = "true";
-        document.getElementById("priceJS11").value = "R$487,37 / Frete Grátis *";
-        document.getElementById("cupomJS11-alerta-falha").style.display = 'none';
-        document.getElementById("cupomJS11-alerta-sucesso").style.display = 'block';
-    } else {
-        document.getElementById("cupomJS11-valido").value = "false";
-        document.getElementById("cupomJS11-alerta-falha").style.display = 'block';
-        document.getElementById("cupomJS11-alerta-sucesso").style.display = 'none';
-        document.getElementById("priceJS11").value = "R$487,37";
-    }
-}
-
-
-
-function cupomJS10(element) {
-    let cupomJS10 = document.getElementById("cupomJS10").value;
-    let cupomJS10Valido = document.getElementById("cupomJS10-valido").value;
-
-    if (cupomJS10 === "FRETE" || cupomJS10 === "LAYLA") {
-        document.getElementById("cupomJS10-valido").value = "true";
-        document.getElementById("priceJS10").value = "R$534,27 / Frete Grátis *";
-        document.getElementById("cupomJS10-alerta-falha").style.display = 'none';
-        document.getElementById("cupomJS10-alerta-sucesso").style.display = 'block';
-    } else {
-        document.getElementById("cupomJS10-valido").value = "false";
-        document.getElementById("cupomJS10-alerta-falha").style.display = 'block';
-        document.getElementById("cupomJS10-alerta-sucesso").style.display = 'none';
-        document.getElementById("priceJS10").value = "R$534,27";
     }
 }
 
@@ -298,7 +189,7 @@ function cupomJS07(element) {
 
 function cupomJS09(element) {
     let cupomJS09 = document.getElementById("cupomJS09").value;
-
+    let cupomJS09Valido = document.getElementById("cupomJS09-valido").value;
 
     if (cupomJS09 === "SHANTAL") {
         document.getElementById("cupomJS09-valido").value = "true";
@@ -362,16 +253,16 @@ function submitJS04(element) {
     let cor = document.getElementById("js04-cor").value;
     let tamanho = document.getElementById("js04-tamanho").value;
 
-    if (cor === "Off-white" && (tamanho === "46" || tamanho === "GG" || tamanho === "P")) {
+    if (cor === "Off-white" && (tamanho === "46" || tamanho === "GG")) {
         document.getElementById("js04-esgotado").style.display = 'block';
 
-    } else if (cor === "Preto") {
+    } else if (cor === "Preto" && (tamanho === "GG" || tamanho === "46" || tamanho === "G" || tamanho === "M")) {
         document.getElementById("js04-esgotado").style.display = 'block';
     } else if (cor === "Vermelho") {
         document.getElementById("js04-esgotado").style.display = 'block';
 
     }
-    else if (cor === "Azul" && (tamanho === "46" || tamanho === "PP" || tamanho === "P" || tamanho === "M")) {
+    else if (cor === "Azul" && (tamanho === "46" || tamanho === "PP")) {
         document.getElementById("js04-esgotado").style.display = 'block';
     } else {
         if (cor !== "escolha" && tamanho !== "escolha") {
@@ -446,7 +337,7 @@ function submitJS09(element) {
     if (cor === "Coral" && (tamanho === "GG" || tamanho === "G")) {
         document.getElementById("js09-esgotado").style.display = 'block';
 
-    } else if (cor === "Preto" && (tamanho === "P" || tamanho === "G")) {
+    } else if (cor === "Preto" && (tamanho === "P")) {
         document.getElementById("js09-esgotado").style.display = 'block';
     } else {
         if (cor !== "escolha" && tamanho !== "escolha") {
@@ -455,51 +346,6 @@ function submitJS09(element) {
             document.getElementById("js09-pagseguro").submit();
         }
     }
-}
-
-
-function submitJS10(element) {
-    let cor = document.getElementById("js10-cor").value;
-    let tamanho = document.getElementById("js10-tamanho").value;
-
-    if (cor === "Preto" && (tamanho === "XGG")) {
-        document.getElementById("js10-esgotado").style.display = 'block';
-    }
-    else if (cor === "Rosa" && (tamanho === "XGG")) {
-        document.getElementById("js10-esgotado").style.display = 'block';
-    }
-    else if (cor === "Turquesa" && (tamanho === "XGG" || tamanho === "M")) {
-        document.getElementById("js10-esgotado").style.display = 'block';
-    } else {
-        if (cor !== "escolha" && tamanho !== "escolha") {
-            showDivJS10(document.getElementById("js10-tamanho"));
-            document.getElementById("js10-esgotado").style.display = 'none';
-            document.getElementById("js10-pagseguro").submit();
-        }
-    }
-
-}
-
-
-
-function submitJS11(element) {
-    let cor = document.getElementById("js11-cor").value;
-    let tamanho = document.getElementById("js11-tamanho").value;
-
-    if (cor === "Preto" && (tamanho === "M")) {
-        document.getElementById("js11-esgotado").style.display = 'block';
-
-    }
-    else if (cor === "NAO TEM ESSA COR" && (tamanho === "46" || tamanho === "PP" || tamanho === "M")) {
-        document.getElementById("js11-esgotado").style.display = 'block';
-    } else {
-        if (cor !== "escolha" && tamanho !== "escolha") {
-            showDivJS11(document.getElementById("js11-tamanho"));
-            document.getElementById("js11-esgotado").style.display = 'none';
-            document.getElementById("js11-pagseguro").submit();
-        }
-    }
-
 }
 
 
@@ -535,28 +381,21 @@ function showDivJS02(element) {
 
     switch (element.value) {
         case 'PP':
+
             document.getElementById("js02").value = cor === "Lima" ? '9B33433FAAAA56AAA49E8FAD0CADC9C1' : '';
             break;
         case 'P':
             if (cupomJS02 === "true") {
-                document.getElementById("js02").value = cor === "Lima" ? 'BF638266F4F43C11140A2F907DD77E29' : '';
+                document.getElementById("js02").value = cor === "Lima" ? 'AQUISIM' : '';
             } else {
                 document.getElementById("js02").value = cor === "Lima" ? '148B2B2FC0C071C00424DFA79501C348  ' : '';
             }
             break;
         case 'M':
-            if (cupomJS02 === "true") {
-                document.getElementById("js02").value = cor === "Lima" ? 'FE21BAD7BDBDC15CC4488FA803388C32' : '';
-            } else {
-                document.getElementById("js02").value = cor === "Lima" ? '429D41122A2AC58BB4002F96753864CE' : '';
-            }
+            document.getElementById("js02").value = cor === "Lima" ? '429D41122A2AC58BB4002F96753864CE' : '';
             break
         case 'G':
-            if (cupomJS02 === "true") {
-                document.getElementById("js02").value = '3C6DEE453E3EAF4CC4B1FFB929A9F75C';
-            } else {
-                document.getElementById("js02").value = cor === "Lima" ? '6EE3A617E7E796CCC4EA5F847732B644' : '';
-            }
+            document.getElementById("js02").value = cor === "Lima" ? '6EE3A617E7E796CCC4EA5F847732B644' : '';
             break;
         default:
             console.log('Sorry, we are out of ' + expr + '.');
@@ -1057,266 +896,6 @@ function showDivJS09(element) {
     }
 
 
-}
-
-
-
-function showDivJS10(element) {
-    alertasJS10();
-    let cor = document.getElementById("js10-cor").value;
-    let cupomJS10 = document.getElementById("cupomJS10-valido").value;
-
-    if (cor === "Preto") {
-        switch (element.value) {
-            case 'PP':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "3972DEC6BABAA9F0044E7FB77AF3F212";
-                } else {
-                    document.getElementById("js10").value = "713ECFCF3030EE2004CB4F9051652AB3";
-                }
-                break;
-            case 'P':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "69845D905050C38BB47F8F81A5734F5B";
-                } else {
-                    document.getElementById("js10").value = "3AD73397EEEE146114E99F965D0FC791";
-                }
-                break;
-            case 'M':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "943D1291F5F557A884621F893D71AAB8";
-                } else {
-                    document.getElementById("js10").value = "71E17EE99494CBCBB4C39FADB8EF12F0";
-                }
-                break;
-            case 'G':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "C5E1BDBC1515C7EFF422FF8B35985FC8";
-                } else {
-                    document.getElementById("js10").value = "9D72C6EC3B3B757AA4976F9A26A1F74C";
-                }
-                break;
-            case 'GG':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "EEC66578A7A7416554F29F9412F328A4";
-                } else {
-                    document.getElementById("js10").value = "D1F3EAEA68683AF77445AFB8B40AAD7E";
-                }
-                break;
-            case 'XGG':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "";
-                } else {
-                    document.getElementById("js10").value = "";
-                }
-                break;
-            default:
-                console.log('Sorry, we are out of ' + expr + '.');
-        }
-    }
-
-    if (cor === "Turquesa") {
-        switch (element.value) {
-            case 'PP':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "2A9869BC6060663114AB7F9670C9C9AF";
-                } else {
-                    document.getElementById("js10").value = "562C00AE7777919334349FB645C80171";
-                }
-                break;
-            case 'P':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "6BC72A7F373736A7742B7F8B7F9C8273";
-                } else {
-                    document.getElementById("js10").value = "852CD1AF31317FA444C28FAD5C6D1FF1";
-                }
-                break;
-            case 'M':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "A42F91EF5959B2D0047ECF984D9B3B0D";
-                } else {
-                    document.getElementById("js10").value = "BB3BF352505019B004E9DF8CD763B99D";
-                }
-                break;
-            case 'G':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "DA6AA4B08A8A49FCC4038FB2C07D1299";
-                } else {
-                    document.getElementById("js10").value = "E74D432E85852F7334F66FA43AAD68DE";
-                }
-                break;
-            case 'GG':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "0CA7AA53CFCF5ACFF4939F90FB85217A";
-                } else {
-                    document.getElementById("js10").value = "13188E5D888829C224522F84F7C81CDA";
-                }
-                break;
-            case 'XGG':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "";
-                } else {
-                    document.getElementById("js10").value = "";
-                }
-                break;
-            default:
-                console.log('Sorry, we are out of ' + expr + '.');
-        }
-    }
-
-    if (cor === "Rosa") {
-        switch (element.value) {
-            case 'PP':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "D84DCF0C202042DDD4924FA2AAEA829D";
-                } else {
-                    document.getElementById("js10").value = "3844A524B0B07C56646CAF95535FFC51";
-                }
-                break;
-            case 'P':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "1192B379E8E883E884CDBFAFD5E45429";
-                } else {
-                    document.getElementById("js10").value = "5266B4B5A9A9121224BB6F858B36EBC6";
-                }
-                break;
-            case 'M':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "464D2F6BB6B67B7884514F9EA5364C31";
-                } else {
-                    document.getElementById("js10").value = "93224FA89595CCF994085F9631311550";
-                }
-                break
-            case 'G':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "8522E304E9E9D91554E01F839C8D8ED9";
-                } else {
-                    document.getElementById("js10").value = "CB640AAA9A9ACA32240A9FB4E24BBF3C";
-                }
-                break;
-            case 'GG':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "C51BC821D2D2738554A87F8002C890AB";
-                } else {
-                    document.getElementById("js10").value = "F5DD97805F5F8E91143CBFBFF0CC0B72";
-                }
-                break;
-            case 'XGG':
-                if (cupomJS10 === "true") {
-                    document.getElementById("js10").value = "";
-                } else {
-                    document.getElementById("js10").value = "";
-                }
-                break;
-            default:
-                console.log('Sorry, we are out of ' + expr + '.');
-        }
-    }
-}
-
-
-function showDivJS11(element) {
-    alertasJS11();
-    let cor = document.getElementById("js11-cor").value;
-    let cupomJS11 = document.getElementById("cupomJS11-valido").value;
-
-    if (cor === "Preto") {
-        switch (element.value) {
-            case 'PP':
-                if (cupomJS11 === "true") {
-                    document.getElementById("js11").value = "9255FBFDEAEA30077478DFAF97EE4D40";
-                } else {
-                    document.getElementById("js11").value = "5C717BBE76765C2AA4424F89DAAD1EE2";
-                }
-                break;
-            case 'P':
-                if (cupomJS11 === "true") {
-                    document.getElementById("js11").value = "3C18E07B1F1F0614449A5F9EF3FE98F5";
-                } else {
-                    document.getElementById("js11").value = "8794FCC2353542022423CFB509795623";
-                }
-                break;
-            case 'M':
-                if (cupomJS11 === "true") {
-                    document.getElementById("js11").value = "38507B09595961D334A03F8F6A3E08AD";
-                } else {
-                    document.getElementById("js11").value = "B2D7B21221211D19942CBF81AFB9A03F";
-                }
-                break
-            case 'G':
-                if (cupomJS11 === "true") {
-                    document.getElementById("js11").value = "7433C494383834D224804F8CA253DDDE";
-                } else {
-                    document.getElementById("js11").value = "D98668589E9E3F8BB4639FB84C5C2D51";
-                }
-                break
-            case 'GG':
-                if (cupomJS11 === "true") {
-                    document.getElementById("js11").value = "AB79B135F6F60F8CC4546FBD1525163F";
-                } else {
-                    document.getElementById("js11").value = "0292B54FEAEA18D3343B2F90526FBA8B";
-                }
-                break;
-            case 'XGG':
-                if (cupomJS11 === "true") {
-                    document.getElementById("js11").value = "9B5419B3DCDC56B11443EFB3FD5F6BEF";
-                } else {
-                    document.getElementById("js11").value = "4F0170D193939A311457AF99F43AE4FB";
-                }
-                break;
-            default:
-                console.log('Sorry, we are out of ' + expr + '.');
-        }
-    }
-
-    if (cor === "Xadrez") {
-        switch (element.value) {
-            case 'PP':
-                if (cupomJS11 === "true") {
-                    document.getElementById("js11").value = "32D97225D7D7981BB4270F9F879E6B0B";
-                } else {
-                    document.getElementById("js11").value = "49CF4BA19797E5ABB440CFADED1370E4";
-                }
-                break;
-            case 'P':
-                if (cupomJS11 === "true") {
-                    document.getElementById("js11").value = "6FF979F05D5DCBB9941CFFB8EDD1FDCF";
-                } else {
-                    document.getElementById("js11").value = "795918D0ABAB36F554017F82A181EDF9";
-                }
-                break;
-            case 'M':
-                if (cupomJS11 === "true") {
-                    document.getElementById("js11").value = "9E4D28CBB4B4A78BB4D33F97AE6F979A";
-                } else {
-                    document.getElementById("js11").value = "A55C68B5B3B329D554801FB23B2385C0";
-                }
-                break
-            case 'G':
-                if (cupomJS11 === "true") {
-                    document.getElementById("js11").value = "CEAEFA08A6A60125543F6F8452953983";
-                } else {
-                    document.getElementById("js11").value = "E04257D6FCFC962EE4A4EFA84FE6C937";
-                }
-                break;
-            case 'GG':
-                if (cupomJS11 === "true") {
-                    document.getElementById("js11").value = "F476C5B40707124AA4F5FF8AFFD4D37E";
-                } else {
-                    document.getElementById("js11").value = "07A7554BFBFB479FF4568FAE71C436B2";
-                }
-                break;
-            case 'XGG':
-                if (cupomJS11 === "true") {
-                    document.getElementById("js11").value = "3566227CD8D8751AA4C36F83FF9F7769";
-                } else {
-                    document.getElementById("js11").value = "5A05BD7B2323F4EFF41E3F8AA6EC3C8D";
-                }
-                break;
-            default:
-                console.log('Sorry, we are out of ' + expr + '.');
-        }
-    }
 }
 
 
